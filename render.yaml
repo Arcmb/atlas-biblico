@@ -1,0 +1,15 @@
+# Deploy do Atlas Bíblico como site estático no Render.
+# Bases completas incorporadas em publicacao_github/dados/.
+services:
+  - type: web
+    name: atlasbiblico
+    runtime: static
+    repo: https://github.com/Arcmb/atlas-biblico
+    branch: main
+    buildCommand: >-
+      test -f publicacao_github/index.html &&
+      test -f publicacao_github/atlas.html &&
+      test -f publicacao_github/dados/biblia_completa.json &&
+      test -f publicacao_github/dados/cross_references.txt &&
+      test -f publicacao_github/dados/enciclopedia_total.js
+    staticPublishPath: ./publicacao_github
