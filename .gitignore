@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+Thumbs.db
+.venv/
+venv/
+node_modules/
+# Exportações opcionais da Bíblia integral: adicionar ao Git apenas após conferir licenças e espaço
+dados/cross_references.txt
+dados/biblia_completa.json
+dados/catalogo_theographic_*.json
+atlas_biblico_integral_offline.html
+# Arquivos temporários de testes
+/tests/atlas_*.png
+/tests/conexoes_original.png

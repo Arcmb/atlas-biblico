@@ -1,0 +1,473 @@
+{
+  "people": [
+    {
+      "name": "Jesus",
+      "en": "Jesus",
+      "aliases": [
+        "Jesus Cristo",
+        "Cristo"
+      ],
+      "summary": "Figura central do Novo Testamento. Os Evangelhos narram seu ministério, ensinos, morte e ressurreição; os escritos apostólicos apresentam sua identidade e significado para a fé cristã.",
+      "refs": [
+        "Matt.1.21",
+        "Luke.2.7",
+        "Mark.1.11",
+        "John.3.16",
+        "John.19.30",
+        "Luke.24.6"
+      ]
+    },
+    {
+      "name": "Paulo",
+      "en": "Paul",
+      "aliases": [
+        "Saulo",
+        "Apóstolo Paulo"
+      ],
+      "summary": "Apóstolo que, após a experiência narrada em Atos 9, passou a anunciar Jesus Cristo em diversas cidades do Mediterrâneo. É uma das principais figuras da expansão da igreja primitiva.",
+      "refs": [
+        "Acts.9.3",
+        "Acts.9.15",
+        "Acts.13.9",
+        "Rom.1.1",
+        "2Tim.4.7"
+      ],
+      "apiLink": "/api/d/theographic/people/paul_2479.json"
+    },
+    {
+      "name": "Moisés",
+      "en": "Moses",
+      "summary": "Líder israelita associado à libertação do povo do Egito, à aliança no Sinai e à condução de Israel pelo deserto, conforme o Pentateuco.",
+      "refs": [
+        "Exod.3.10",
+        "Exod.14.21",
+        "Exod.20.1",
+        "Deut.34.5",
+        "Heb.11.24"
+      ]
+    },
+    {
+      "name": "Daniel",
+      "en": "Daniel",
+      "summary": "Jovem judeu levado ao exílio na Babilônia. O livro que leva seu nome descreve sua fidelidade, suas experiências na corte e suas visões proféticas.",
+      "refs": [
+        "Dan.1.6",
+        "Dan.2.19",
+        "Dan.6.10",
+        "Dan.6.22",
+        "Dan.9.2"
+      ]
+    },
+    {
+      "name": "Pedro",
+      "en": "Simon Peter",
+      "aliases": [
+        "Simão Pedro",
+        "Cefas"
+      ],
+      "summary": "Discípulo de Jesus e um dos apóstolos mais presentes nos Evangelhos e em Atos. Aparece entre os primeiros chamados por Jesus e como pregador no início da igreja.",
+      "refs": [
+        "Matt.4.18",
+        "Matt.16.16",
+        "Luke.22.61",
+        "Acts.2.14",
+        "Acts.3.6"
+      ],
+      "apiLink": "/api/d/theographic/people/peter_2745.json"
+    },
+    {
+      "name": "Abraão",
+      "en": "Abraham",
+      "aliases": [
+        "Abrão"
+      ],
+      "summary": "Patriarca chamado por Deus a deixar sua terra. As promessas sobre descendência e bênção às nações constituem um eixo importante de Gênesis e são retomadas no Novo Testamento.",
+      "refs": [
+        "Gen.12.1",
+        "Gen.15.6",
+        "Gen.17.5",
+        "Gen.22.2",
+        "Rom.4.3"
+      ]
+    },
+    {
+      "name": "Davi",
+      "en": "David",
+      "summary": "Pastor que se tornou rei de Israel. Sua trajetória envolve a unção por Samuel, o enfrentamento de Golias, o governo do reino e a promessa de uma dinastia.",
+      "refs": [
+        "1Sam.16.13",
+        "1Sam.17.49",
+        "2Sam.5.4",
+        "2Sam.7.16"
+      ]
+    },
+    {
+      "name": "Maria, mãe de Jesus",
+      "en": "Mary (mother of Jesus)",
+      "aliases": [
+        "Maria mãe de Jesus",
+        "Virgem Maria"
+      ],
+      "summary": "Mulher de Nazaré que, segundo os Evangelhos, recebeu o anúncio do nascimento de Jesus e acompanhou momentos importantes de sua vida.",
+      "refs": [
+        "Luke.1.26",
+        "Luke.1.38",
+        "Luke.2.7",
+        "John.19.25"
+      ]
+    },
+    {
+      "name": "Elias",
+      "en": "Elijah",
+      "summary": "Profeta de Israel associado ao confronto contra a idolatria, ao episódio no monte Carmelo e à narrativa de sua partida em 2 Reis.",
+      "refs": [
+        "1Kgs.17.1",
+        "1Kgs.18.36",
+        "2Kgs.2.11",
+        "Jas.5.17"
+      ]
+    },
+    {
+      "name": "Josué",
+      "en": "Joshua",
+      "summary": "Sucessor de Moisés na liderança de Israel. O livro de Josué narra a travessia do Jordão, a ocupação de Canaã e a renovação do compromisso com o Senhor.",
+      "refs": [
+        "Josh.1.1",
+        "Josh.3.14",
+        "Josh.6.20",
+        "Josh.24.15"
+      ]
+    },
+    {
+      "name": "Noé",
+      "en": "Noah",
+      "summary": "Personagem de Gênesis ligado à construção da arca, ao dilúvio e à aliança anunciada após o recuo das águas.",
+      "refs": [
+        "Gen.6.9",
+        "Gen.6.14",
+        "Gen.7.1",
+        "Gen.9.11"
+      ]
+    },
+    {
+      "name": "José do Egito",
+      "en": "Joseph (son of Jacob)",
+      "aliases": [
+        "José filho de Jacó"
+      ],
+      "summary": "Filho de Jacó vendido pelos irmãos e levado ao Egito. Sua história em Gênesis culmina na reconciliação familiar e na sobrevivência da família durante a fome.",
+      "refs": [
+        "Gen.37.3",
+        "Gen.39.2",
+        "Gen.41.41",
+        "Gen.50.20"
+      ]
+    },
+    {
+      "name": "Samuel",
+      "en": "Samuel",
+      "summary": "Profeta e juiz em Israel, associado à transição para a monarquia e à unção de Saul e Davi.",
+      "refs": [
+        "1Sam.3.10",
+        "1Sam.8.6",
+        "1Sam.10.1",
+        "1Sam.16.13"
+      ]
+    },
+    {
+      "name": "Rute",
+      "en": "Ruth",
+      "summary": "Moabita que permaneceu com Noemi e integrou a linhagem de Davi, conforme a narrativa do livro de Rute.",
+      "refs": [
+        "Ruth.1.16",
+        "Ruth.2.2",
+        "Ruth.4.13",
+        "Ruth.4.17"
+      ]
+    },
+    {
+      "name": "Ester",
+      "en": "Esther",
+      "summary": "Rainha judia da Pérsia que intercedeu por seu povo diante de uma ameaça de extermínio, conforme o livro de Ester.",
+      "refs": [
+        "Esth.2.17",
+        "Esth.4.14",
+        "Esth.7.3"
+      ]
+    },
+    {
+      "name": "João Batista",
+      "en": "John the Baptist",
+      "summary": "Pregador que anunciou a necessidade de arrependimento e batizou Jesus no Jordão, conforme os Evangelhos.",
+      "refs": [
+        "Matt.3.1",
+        "Matt.3.13",
+        "John.1.29"
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Jerusalém",
+      "en": "Jerusalem",
+      "summary": "Cidade central na história de Israel e no desenvolvimento das narrativas bíblicas. Aparece no contexto da monarquia, do templo e dos acontecimentos finais do ministério de Jesus.",
+      "refs": [
+        "2Sam.5.6",
+        "1Kgs.8.1",
+        "Matt.21.10",
+        "Luke.24.47",
+        "Acts.2.5"
+      ],
+      "apiLink": "/api/d/theographic/places/jerusalem_636.json"
+    },
+    {
+      "name": "Belém",
+      "en": "Bethlehem",
+      "summary": "Cidade de Judá associada à família de Davi e, nos Evangelhos, ao nascimento de Jesus. Não deve ser confundida com Belém da Galileia.",
+      "refs": [
+        "Ruth.1.1",
+        "1Sam.16.4",
+        "Mic.5.2",
+        "Matt.2.1",
+        "Luke.2.4"
+      ]
+    },
+    {
+      "name": "Nazaré",
+      "en": "Nazareth",
+      "summary": "Localidade da Galileia relacionada à vida de Maria, José e Jesus. Os Evangelhos descrevem Jesus como alguém criado em Nazaré.",
+      "refs": [
+        "Luke.1.26",
+        "Matt.2.23",
+        "Luke.4.16",
+        "John.1.46"
+      ]
+    },
+    {
+      "name": "Egito",
+      "en": "Egypt",
+      "summary": "Região e reino associados à permanência de José, à escravidão dos israelitas, ao Êxodo e ao refúgio da família de Jesus.",
+      "refs": [
+        "Gen.41.41",
+        "Exod.1.11",
+        "Exod.12.31",
+        "Matt.2.13"
+      ]
+    },
+    {
+      "name": "Babilônia",
+      "en": "Babylon",
+      "summary": "Cidade e centro imperial ligados ao exílio de Judá e às narrativas de Daniel. O nome também aparece com valor simbólico no Apocalipse, não necessariamente como referência geográfica ao mesmo local.",
+      "refs": [
+        "2Kgs.24.10",
+        "Dan.1.1",
+        "Ps.137.1",
+        "Rev.17.5"
+      ]
+    },
+    {
+      "name": "Jericó",
+      "en": "Jericho",
+      "summary": "Cidade próxima ao vale do Jordão, conhecida pela narrativa da conquista sob Josué e por passagens dos Evangelhos.",
+      "refs": [
+        "Josh.6.1",
+        "Josh.6.20",
+        "Luke.19.1"
+      ]
+    },
+    {
+      "name": "Galileia",
+      "en": "Galilee",
+      "summary": "Região do norte da terra de Israel onde os Evangelhos situam boa parte do ministério público de Jesus.",
+      "refs": [
+        "Matt.4.12",
+        "Matt.4.23",
+        "Mark.1.9",
+        "Luke.4.14"
+      ]
+    },
+    {
+      "name": "Jordão",
+      "en": "Jordan River",
+      "aliases": [
+        "Rio Jordão"
+      ],
+      "summary": "Rio de importância geográfica e religiosa nas Escrituras, associado à entrada de Israel na terra prometida e ao batismo de Jesus.",
+      "refs": [
+        "Josh.3.15",
+        "2Kgs.2.8",
+        "Matt.3.13",
+        "Mark.1.9"
+      ]
+    },
+    {
+      "name": "Monte Sinai",
+      "en": "Mount Sinai",
+      "aliases": [
+        "Sinai",
+        "Horebe"
+      ],
+      "summary": "Montanha associada aos acontecimentos do Êxodo, especialmente à manifestação divina e à entrega da Lei a Israel.",
+      "refs": [
+        "Exod.19.11",
+        "Exod.20.1",
+        "Exod.34.2"
+      ]
+    },
+    {
+      "name": "Éfeso",
+      "en": "Ephesus",
+      "summary": "Cidade da Ásia Menor mencionada no ministério de Paulo, na igreja da região e na mensagem de Apocalipse 2.",
+      "refs": [
+        "Acts.19.1",
+        "Acts.19.10",
+        "Eph.1.1",
+        "Rev.2.1"
+      ]
+    },
+    {
+      "name": "Samaria",
+      "en": "Samaria",
+      "summary": "Nome usado para uma cidade e também para uma região. No Novo Testamento, aparece na narrativa do encontro de Jesus com uma samaritana e na expansão da igreja.",
+      "refs": [
+        "1Kgs.16.24",
+        "John.4.4",
+        "John.4.7",
+        "Acts.8.5"
+      ]
+    },
+    {
+      "name": "Jardim do Éden",
+      "en": "Garden of Eden",
+      "aliases": [
+        "Éden"
+      ],
+      "summary": "Jardim apresentado em Gênesis 2–3 como o cenário da criação da humanidade e da narrativa da desobediência de Adão e Eva.",
+      "refs": [
+        "Gen.2.8",
+        "Gen.2.15",
+        "Gen.3.23"
+      ]
+    },
+    {
+      "name": "Damasco",
+      "en": "Damascus",
+      "summary": "Cidade síria citada em Gênesis, nos profetas e em Atos. É especialmente conhecida, no Novo Testamento, pela experiência de Saulo na estrada para Damasco.",
+      "refs": [
+        "Gen.14.15",
+        "Isa.17.1",
+        "Acts.9.3",
+        "Acts.9.10"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "Criação",
+      "en": "Creation of all things",
+      "summary": "Conjunto de narrativas e afirmações bíblicas relativas à origem dos céus, da terra e da vida. Gênesis 1–2 concentra a descrição inicial.",
+      "refs": [
+        "Gen.1.1",
+        "Gen.1.3",
+        "Gen.2.1",
+        "John.1.3",
+        "Col.1.16"
+      ]
+    },
+    {
+      "name": "Êxodo",
+      "en": "Exodus",
+      "aliases": [
+        "Saída do Egito"
+      ],
+      "summary": "Libertação dos israelitas da escravidão no Egito, incluindo as pragas, a Páscoa, a saída e a travessia do mar.",
+      "refs": [
+        "Exod.12.31",
+        "Exod.12.41",
+        "Exod.14.21",
+        "Deut.5.6"
+      ]
+    },
+    {
+      "name": "Dilúvio",
+      "en": "Great flood",
+      "summary": "Narrativa de Gênesis 6–9 na qual Noé constrói uma arca e é preservado com sua família e representantes dos animais.",
+      "refs": [
+        "Gen.6.17",
+        "Gen.7.11",
+        "Gen.8.1",
+        "Gen.9.11"
+      ]
+    },
+    {
+      "name": "Nascimento de Jesus",
+      "en": "Birth of Jesus",
+      "aliases": [
+        "Natividade"
+      ],
+      "summary": "Relatos do nascimento de Jesus e de suas circunstâncias, apresentados sobretudo nos Evangelhos de Mateus e Lucas.",
+      "refs": [
+        "Matt.1.18",
+        "Matt.1.21",
+        "Matt.2.1",
+        "Luke.2.7"
+      ]
+    },
+    {
+      "name": "Crucificação de Jesus",
+      "en": "Crucifixion of Jesus",
+      "aliases": [
+        "Crucificação",
+        "Morte de Jesus"
+      ],
+      "summary": "Acontecimentos da execução de Jesus na cruz, descritos nos quatro Evangelhos e retomados em interpretações apostólicas.",
+      "refs": [
+        "Matt.27.35",
+        "Mark.15.24",
+        "Luke.23.33",
+        "John.19.18",
+        "Rom.5.8"
+      ]
+    },
+    {
+      "name": "Ressurreição de Jesus",
+      "en": "Resurrection of Jesus",
+      "aliases": [
+        "Ressurreição"
+      ],
+      "summary": "Relatos evangélicos sobre o túmulo vazio e o anúncio de que Jesus ressuscitou. O tema é central na pregação apostólica.",
+      "refs": [
+        "Matt.28.6",
+        "Mark.16.6",
+        "Luke.24.6",
+        "John.20.1",
+        "Acts.2.24"
+      ]
+    },
+    {
+      "name": "Pentecostes",
+      "en": "Pentecost",
+      "summary": "Em Atos 2, reunião dos discípulos em Jerusalém marcada pela manifestação do Espírito Santo e pela pregação pública de Pedro.",
+      "refs": [
+        "Acts.2.1",
+        "Acts.2.4",
+        "Acts.2.14",
+        "Acts.2.41"
+      ]
+    },
+    {
+      "name": "Conversão de Paulo",
+      "en": "Saul is converted",
+      "aliases": [
+        "Conversão de Saulo"
+      ],
+      "summary": "Relato de Atos 9 em que Saulo, a caminho de Damasco, encontra Jesus e passa por uma transformação de sua trajetória.",
+      "refs": [
+        "Acts.9.3",
+        "Acts.9.6",
+        "Acts.9.17",
+        "Acts.22.6"
+      ]
+    }
+  ]
+}

@@ -17,10 +17,16 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - name: Baixar código
+        uses: actions/checkout@v4
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+      - name: Validar dados locais
+        run: python -m unittest discover -s tests -p 'test_dados.py' -v
+      - name: Preparar artefato
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .
-      - id: deploy
+      - name: Publicar site
+        id: deploy
         uses: actions/deploy-pages@v4

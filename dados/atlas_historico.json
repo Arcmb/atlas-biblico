@@ -1,0 +1,1701 @@
+{
+  "schema": "atlas-historico-v1",
+  "attribution": "Cartografia adaptada de Natural Earth (domínio público); eventos, lugares e rotas: seleção editorial baseada nas passagens bíblicas indicadas; locais e trajetos aproximados conforme notas.",
+  "places": [
+    {
+      "id": "belem",
+      "name": "Belém da Judeia",
+      "lat": 31.704,
+      "lon": 35.205,
+      "summary": "Cidade de Judá relacionada à família de Davi e ao nascimento de Jesus.",
+      "refs": [
+        "Ruth.1.1",
+        "1Sam.16.4",
+        "Mic.5.2",
+        "Luke.2.4",
+        "Matt.2.1"
+      ],
+      "modern": "Cisjordânia",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "nazare",
+      "name": "Nazaré",
+      "lat": 32.699,
+      "lon": 35.304,
+      "summary": "Localidade da Galileia em que Jesus foi criado; associada também a Maria e José.",
+      "refs": [
+        "Luke.1.26",
+        "Luke.2.39",
+        "Matt.2.23",
+        "Luke.4.16"
+      ],
+      "modern": "Israel",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalém",
+      "lat": 31.778,
+      "lon": 35.235,
+      "summary": "Cidade ligada à monarquia davídica, ao templo, aos últimos acontecimentos do ministério de Jesus e ao início da igreja.",
+      "refs": [
+        "2Sam.5.6",
+        "1Kgs.8.1",
+        "Mark.11.11",
+        "Luke.24.47",
+        "Acts.2.5"
+      ],
+      "modern": "Jerusalém",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "capernaum",
+      "name": "Cafarnaum",
+      "lat": 32.881,
+      "lon": 35.575,
+      "summary": "Cidade à margem do lago de Genesaré, importante centro das atividades de Jesus na Galileia.",
+      "refs": [
+        "Matt.4.13",
+        "Mark.1.21",
+        "Luke.4.31"
+      ],
+      "modern": "Israel",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "cana",
+      "name": "Caná da Galileia",
+      "lat": 32.752,
+      "lon": 35.357,
+      "summary": "Localidade mencionada no relato do casamento em Caná; identificação arqueológica precisa discutida.",
+      "refs": [
+        "John.2.1",
+        "John.4.46"
+      ],
+      "modern": "Galileia",
+      "certainty": "identificação tradicional; sítio discutido"
+    },
+    {
+      "id": "jerico",
+      "name": "Jericó",
+      "lat": 31.872,
+      "lon": 35.445,
+      "summary": "Cidade próxima ao vale do Jordão, presente nas narrativas de Josué e na viagem de Jesus.",
+      "refs": [
+        "Josh.6.20",
+        "Luke.18.35",
+        "Luke.19.1"
+      ],
+      "modern": "Cisjordânia",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "betania",
+      "name": "Betânia",
+      "lat": 31.772,
+      "lon": 35.269,
+      "summary": "Povoado próximo de Jerusalém, associado a Marta, Maria e Lázaro.",
+      "refs": [
+        "John.11.1",
+        "Mark.11.1",
+        "John.12.1"
+      ],
+      "modern": "Al-Eizariya, Cisjordânia",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "sicar",
+      "name": "Sicar / região de Samaria",
+      "lat": 32.212,
+      "lon": 35.283,
+      "summary": "Área tradicionalmente associada ao encontro de Jesus com uma mulher samaritana; identificação da povoação discutida.",
+      "refs": [
+        "John.4.4",
+        "John.4.5",
+        "John.4.7"
+      ],
+      "modern": "Região de Nablus",
+      "certainty": "localização aproximada; topônimo discutido"
+    },
+    {
+      "id": "jordao",
+      "name": "Rio Jordão (setor sul)",
+      "lat": 31.836,
+      "lon": 35.553,
+      "summary": "Área do Jordão usada como marcador esquemático do batismo de Jesus, sem fixar ponto exato.",
+      "refs": [
+        "Matt.3.13",
+        "Mark.1.9",
+        "John.1.28"
+      ],
+      "modern": "Vale do Jordão",
+      "certainty": "ponto apenas indicativo; sítio preciso debatido"
+    },
+    {
+      "id": "deserto",
+      "name": "Deserto da Judeia",
+      "lat": 31.57,
+      "lon": 35.38,
+      "summary": "Região desértica utilizada para representar o episódio das tentações de Jesus; a localização não é indicada no texto.",
+      "refs": [
+        "Matt.4.1",
+        "Luke.4.1"
+      ],
+      "modern": "Deserto da Judeia",
+      "certainty": "região aproximada; local exato desconhecido"
+    },
+    {
+      "id": "galileia",
+      "name": "Região da Galileia",
+      "lat": 32.81,
+      "lon": 35.5,
+      "summary": "Região do norte de Israel onde os Evangelhos situam muitos ensinos e milagres de Jesus.",
+      "refs": [
+        "Matt.4.23",
+        "Mark.1.14",
+        "Luke.4.14"
+      ],
+      "modern": "Israel",
+      "certainty": "marcador regional aproximado"
+    },
+    {
+      "id": "egito",
+      "name": "Egito (marcador regional)",
+      "lat": 30.06,
+      "lon": 31.23,
+      "summary": "Região usada apenas para situar geograficamente a fuga da família de Jesus. O Evangelho não informa a cidade em que permaneceu.",
+      "refs": [
+        "Matt.2.13",
+        "Matt.2.14",
+        "Matt.2.19"
+      ],
+      "modern": "Egito",
+      "certainty": "posição ilustrativa; não é a cidade do refúgio"
+    },
+    {
+      "id": "tiro",
+      "name": "Tiro",
+      "lat": 33.274,
+      "lon": 35.197,
+      "summary": "Cidade fenícia mencionada em passagens proféticas e nos Evangelhos.",
+      "refs": [
+        "Matt.15.21",
+        "Mark.7.24"
+      ],
+      "modern": "Líbano",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "sidom",
+      "name": "Sidom",
+      "lat": 33.56,
+      "lon": 35.375,
+      "summary": "Cidade fenícia costeira mencionada nas Escrituras.",
+      "refs": [
+        "Matt.15.21",
+        "Mark.7.31"
+      ],
+      "modern": "Líbano",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "cesareia",
+      "name": "Cesareia Marítima",
+      "lat": 32.503,
+      "lon": 34.895,
+      "summary": "Porto romano da Judeia relevante nos relatos do livro de Atos.",
+      "refs": [
+        "Acts.10.1",
+        "Acts.23.23"
+      ],
+      "modern": "Israel",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "ur",
+      "name": "Ur",
+      "lat": 30.963,
+      "lon": 46.105,
+      "summary": "Cidade da Mesopotâmia geralmente identificada com Ur, no sul do atual Iraque. Há discussões sobre a localização da Ur bíblica.",
+      "refs": [
+        "Gen.11.28",
+        "Gen.11.31"
+      ],
+      "modern": "Iraque",
+      "certainty": "identificação tradicional, debatida"
+    },
+    {
+      "id": "hara",
+      "name": "Harã",
+      "lat": 36.864,
+      "lon": 39.025,
+      "summary": "Centro urbano na Alta Mesopotâmia; Gênesis relata que a família de Abrão permaneceu ali.",
+      "refs": [
+        "Gen.11.31",
+        "Gen.12.4"
+      ],
+      "modern": "Türkiye",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "siquem",
+      "name": "Siquém",
+      "lat": 32.212,
+      "lon": 35.285,
+      "summary": "Local da região de Canaã relacionado à chegada de Abrão e a várias narrativas de Israel.",
+      "refs": [
+        "Gen.12.6",
+        "Josh.24.1"
+      ],
+      "modern": "Região de Nablus",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "betel",
+      "name": "Betel",
+      "lat": 31.94,
+      "lon": 35.22,
+      "summary": "Localidade associada a Abrão, Jacó e à história de Israel; identificação exata tem alternativas.",
+      "refs": [
+        "Gen.12.8",
+        "Gen.28.19"
+      ],
+      "modern": "Cisjordânia",
+      "certainty": "identificação aproximada"
+    },
+    {
+      "id": "hebron",
+      "name": "Hebrom",
+      "lat": 31.533,
+      "lon": 35.093,
+      "summary": "Cidade das narrativas dos patriarcas e do início do reinado de Davi.",
+      "refs": [
+        "Gen.13.18",
+        "Gen.23.2",
+        "2Sam.2.11"
+      ],
+      "modern": "Cisjordânia",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "goshen",
+      "name": "Terra de Gósen (marcador regional)",
+      "lat": 30.7,
+      "lon": 31.75,
+      "summary": "Região do delta oriental do Nilo associada à residência dos israelitas no Egito, sem localização pontual segura.",
+      "refs": [
+        "Gen.47.6",
+        "Exod.8.22"
+      ],
+      "modern": "Delta do Nilo",
+      "certainty": "região aproximada"
+    },
+    {
+      "id": "rameses",
+      "name": "Ramessés (localização discutida)",
+      "lat": 30.8,
+      "lon": 31.9,
+      "summary": "Uma das localidades citadas como ponto de partida do Êxodo; posicionamento baseado em hipóteses.",
+      "refs": [
+        "Exod.12.37"
+      ],
+      "modern": "Delta oriental do Nilo",
+      "certainty": "localização contestada"
+    },
+    {
+      "id": "mar_travessia",
+      "name": "Travessia do mar (posição ilustrativa)",
+      "lat": 29.9,
+      "lon": 32.48,
+      "summary": "Marcador esquemático para a travessia narrada no Êxodo; o local histórico exato é objeto de intenso debate.",
+      "refs": [
+        "Exod.14.21",
+        "Exod.14.22"
+      ],
+      "modern": "Região do golfo de Suez",
+      "certainty": "marcador deliberadamente esquemático"
+    },
+    {
+      "id": "sinai",
+      "name": "Monte Sinai / Horebe",
+      "lat": 28.539,
+      "lon": 33.976,
+      "summary": "Local associado à aliança e à entrega da Lei; o monte tradicional é uma entre diferentes propostas de identificação.",
+      "refs": [
+        "Exod.19.1",
+        "Exod.19.18",
+        "Exod.20.1"
+      ],
+      "modern": "Península do Sinai",
+      "certainty": "localização tradicional não comprovada"
+    },
+    {
+      "id": "cades",
+      "name": "Cades-Barneia",
+      "lat": 30.663,
+      "lon": 34.418,
+      "summary": "Localidade do período de peregrinação pelo deserto; a identificação arqueológica é discutida.",
+      "refs": [
+        "Num.13.26",
+        "Num.20.1"
+      ],
+      "modern": "Região de Cades",
+      "certainty": "localização aproximada"
+    },
+    {
+      "id": "moabe",
+      "name": "Planícies de Moabe",
+      "lat": 31.77,
+      "lon": 35.63,
+      "summary": "Área a leste do Jordão associada à etapa final da peregrinação de Israel.",
+      "refs": [
+        "Num.22.1",
+        "Deut.34.1"
+      ],
+      "modern": "Jordânia",
+      "certainty": "marcador regional"
+    },
+    {
+      "id": "moabe_rute",
+      "name": "Moabe",
+      "lat": 31.44,
+      "lon": 35.7,
+      "summary": "Região a leste do mar Morto de onde Rute acompanhou Noemi até Belém.",
+      "refs": [
+        "Ruth.1.1",
+        "Ruth.1.6",
+        "Ruth.1.16"
+      ],
+      "modern": "Jordânia",
+      "certainty": "região aproximada"
+    },
+    {
+      "id": "antioquia_siria",
+      "name": "Antioquia da Síria",
+      "lat": 36.204,
+      "lon": 36.16,
+      "summary": "Cidade de onde Paulo e Barnabé foram enviados na primeira viagem missionária.",
+      "refs": [
+        "Acts.13.1",
+        "Acts.13.3",
+        "Acts.14.26"
+      ],
+      "modern": "Antakya, Türkiye",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "seleucia",
+      "name": "Selêucia Piéria",
+      "lat": 36.127,
+      "lon": 35.94,
+      "summary": "Porto de onde Paulo e Barnabé partiram rumo a Chipre.",
+      "refs": [
+        "Acts.13.4"
+      ],
+      "modern": "Região de Samandağ, Türkiye",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "salamina",
+      "name": "Salamina (Chipre)",
+      "lat": 35.178,
+      "lon": 33.904,
+      "summary": "Cidade no leste de Chipre onde Paulo e Barnabé pregaram.",
+      "refs": [
+        "Acts.13.5"
+      ],
+      "modern": "Chipre",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "pafos",
+      "name": "Pafos",
+      "lat": 34.772,
+      "lon": 32.423,
+      "summary": "Cidade do oeste de Chipre visitada por Paulo e Barnabé.",
+      "refs": [
+        "Acts.13.6",
+        "Acts.13.12"
+      ],
+      "modern": "Chipre",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "perge",
+      "name": "Perge",
+      "lat": 36.961,
+      "lon": 30.853,
+      "summary": "Cidade da Panfília por onde Paulo passou na primeira viagem.",
+      "refs": [
+        "Acts.13.13",
+        "Acts.14.25"
+      ],
+      "modern": "Türkiye",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "antioquia_pisidia",
+      "name": "Antioquia da Pisídia",
+      "lat": 38.306,
+      "lon": 31.188,
+      "summary": "Cidade onde Paulo fez uma pregação em uma sinagoga.",
+      "refs": [
+        "Acts.13.14",
+        "Acts.13.16"
+      ],
+      "modern": "Yalvaç, Türkiye",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "iconio",
+      "name": "Icônio",
+      "lat": 37.873,
+      "lon": 32.49,
+      "summary": "Cidade da região da Licaônia visitada por Paulo e Barnabé.",
+      "refs": [
+        "Acts.14.1",
+        "Acts.14.21"
+      ],
+      "modern": "Konya, Türkiye",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "listra",
+      "name": "Listra",
+      "lat": 37.56,
+      "lon": 32.49,
+      "summary": "Localidade visitada por Paulo, que ali enfrentou hostilidade.",
+      "refs": [
+        "Acts.14.6",
+        "Acts.14.19",
+        "Acts.14.21"
+      ],
+      "modern": "Türkiye",
+      "certainty": "identificação aproximada"
+    },
+    {
+      "id": "derbe",
+      "name": "Derbe",
+      "lat": 37.35,
+      "lon": 33.36,
+      "summary": "Cidade mencionada como destino de Paulo na primeira viagem; localização arqueológica precisa discutida.",
+      "refs": [
+        "Acts.14.6",
+        "Acts.14.20"
+      ],
+      "modern": "Türkiye",
+      "certainty": "localização aproximada"
+    },
+    {
+      "id": "atalia",
+      "name": "Atalia",
+      "lat": 36.9,
+      "lon": 30.7,
+      "summary": "Porto de onde Paulo e Barnabé viajaram de volta a Antioquia.",
+      "refs": [
+        "Acts.14.25"
+      ],
+      "modern": "Antalya, Türkiye",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "damasco",
+      "name": "Damasco",
+      "lat": 33.514,
+      "lon": 36.291,
+      "summary": "Cidade associada à experiência de Saulo narrada em Atos 9.",
+      "refs": [
+        "Acts.9.3",
+        "Acts.9.10"
+      ],
+      "modern": "Síria",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "babilonia",
+      "name": "Babilônia",
+      "lat": 32.536,
+      "lon": 44.42,
+      "summary": "Centro do império neobabilônico associado ao exílio de Judá e ao livro de Daniel.",
+      "refs": [
+        "2Kgs.25.7",
+        "Dan.1.1",
+        "Ps.137.1"
+      ],
+      "modern": "Iraque",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "ribla",
+      "name": "Ribla",
+      "lat": 34.39,
+      "lon": 36.3,
+      "summary": "Localidade do episódio de captura e julgamento de Zedequias narrado em 2 Reis 25.",
+      "refs": [
+        "2Kgs.25.6"
+      ],
+      "modern": "Síria",
+      "certainty": "localização aproximada"
+    },
+    {
+      "id": "samaria_cidade",
+      "name": "Samaria (cidade antiga)",
+      "lat": 32.276,
+      "lon": 35.193,
+      "summary": "Antiga capital do reino de Israel, conquistada pelos assírios no século VIII a.C.",
+      "refs": [
+        "1Kgs.16.24",
+        "2Kgs.17.6"
+      ],
+      "modern": "Sebastia, Cisjordânia",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "ninive",
+      "name": "Nínive",
+      "lat": 36.36,
+      "lon": 43.15,
+      "summary": "Centro imperial assírio, lembrado especialmente no livro de Jonas.",
+      "refs": [
+        "Jonah.1.2",
+        "Nah.1.1"
+      ],
+      "modern": "Região de Mosul, Iraque",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "susa",
+      "name": "Susã",
+      "lat": 32.19,
+      "lon": 48.25,
+      "summary": "Capital persa relacionada às narrativas de Ester e Neemias.",
+      "refs": [
+        "Esth.1.2",
+        "Neh.1.1"
+      ],
+      "modern": "Irã",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "lat": 41.902,
+      "lon": 12.496,
+      "summary": "Capital imperial romana e destino de Paulo no final do livro de Atos.",
+      "refs": [
+        "Acts.28.14",
+        "Acts.28.16",
+        "Rom.1.7"
+      ],
+      "modern": "Itália",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "efeso",
+      "name": "Éfeso",
+      "lat": 37.94,
+      "lon": 27.34,
+      "summary": "Cidade da Ásia Menor relacionada à atuação missionária de Paulo.",
+      "refs": [
+        "Acts.19.1",
+        "Acts.19.10",
+        "Rev.2.1"
+      ],
+      "modern": "Türkiye",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "corinto",
+      "name": "Corinto",
+      "lat": 37.94,
+      "lon": 22.93,
+      "summary": "Cidade da Grécia visitada por Paulo e destinatária das cartas aos Coríntios.",
+      "refs": [
+        "Acts.18.1",
+        "1Cor.1.2"
+      ],
+      "modern": "Grécia",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "atenas",
+      "name": "Atenas",
+      "lat": 37.98,
+      "lon": 23.73,
+      "summary": "Cidade grega onde Paulo discursou no Areópago.",
+      "refs": [
+        "Acts.17.16",
+        "Acts.17.22"
+      ],
+      "modern": "Grécia",
+      "certainty": "localização identificada"
+    },
+    {
+      "id": "mara",
+      "name": "Mara",
+      "lat": 29.82,
+      "lon": 33.77,
+      "summary": "Local citado na narrativa do Êxodo; ponto geográfico é controverso.",
+      "refs": [
+        "Exod.15.23"
+      ],
+      "modern": "Sinai",
+      "certainty": "localização debatida"
+    },
+    {
+      "id": "galgala",
+      "name": "Gilgal (região)",
+      "lat": 31.87,
+      "lon": 35.43,
+      "summary": "Acampamento de Israel após a travessia do Jordão, com identificação exata debatida.",
+      "refs": [
+        "Josh.4.19",
+        "Josh.5.10"
+      ],
+      "modern": "Vale do Jordão",
+      "certainty": "localização aproximada"
+    },
+    {
+      "id": "hazor",
+      "name": "Hazor",
+      "lat": 33.02,
+      "lon": 35.56,
+      "summary": "Cidade no norte da terra de Israel mencionada na narrativa da conquista de Canaã.",
+      "refs": [
+        "Josh.11.1",
+        "Josh.11.10"
+      ],
+      "modern": "Tel Hazor, Israel",
+      "certainty": "localização identificada"
+    }
+  ],
+  "journeys": [
+    {
+      "id": "jesus",
+      "name": "Vida de Jesus",
+      "category": "personagens",
+      "kind": "male",
+      "description": "Acompanhe episódios selecionados dos Evangelhos em diferentes localidades. A rota não representa todas as viagens nem resolve divergências cronológicas entre os relatos.",
+      "subtitle": "Infância, ministério e últimos acontecimentos",
+      "person": "Jesus",
+      "qualification": "Sequência temática e parcialmente cronológica: não é um itinerário contínuo comprovado. A posição no Egito, no deserto e no Jordão é aproximada.",
+      "steps": [
+        {
+          "place": "belem",
+          "title": "Nascimento em Belém",
+          "summary": "Relatos de Mateus e Lucas situam o nascimento de Jesus em Belém.",
+          "ref": "Luke.2.4-7",
+          "period": "c. 6–4 a.C.",
+          "icon": "male"
+        },
+        {
+          "place": "egito",
+          "title": "Fuga para o Egito",
+          "summary": "Segundo Mateus, a família se refugiou no Egito. A cidade de residência não é identificada.",
+          "ref": "Matt.2.13-14",
+          "period": "Infância",
+          "icon": "male"
+        },
+        {
+          "place": "nazare",
+          "title": "Crescimento em Nazaré",
+          "summary": "Os Evangelhos situam a infância e o crescimento de Jesus em Nazaré.",
+          "ref": "Luke.2.39-40",
+          "period": "Infância e juventude",
+          "icon": "male"
+        },
+        {
+          "place": "jordao",
+          "title": "Batismo no Jordão",
+          "summary": "João batiza Jesus no Jordão; o ponto no mapa representa somente a área geral.",
+          "ref": "Mark.1.9-11",
+          "period": "Início do ministério",
+          "icon": "male"
+        },
+        {
+          "place": "deserto",
+          "title": "Tentação no deserto",
+          "summary": "Os Evangelhos relatam uma permanência de Jesus no deserto, sem identificar o lugar preciso.",
+          "ref": "Matt.4.1-11",
+          "period": "Início do ministério",
+          "icon": "male"
+        },
+        {
+          "place": "cana",
+          "title": "Sinal em Caná",
+          "summary": "O Evangelho de João registra o primeiro sinal em um casamento em Caná.",
+          "ref": "John.2.1-11",
+          "period": "Ministério",
+          "icon": "male"
+        },
+        {
+          "place": "capernaum",
+          "title": "Atuação em Cafarnaum",
+          "summary": "A cidade aparece como um dos centros da atuação pública de Jesus na Galileia.",
+          "ref": "Matt.4.13",
+          "period": "Ministério na Galileia",
+          "icon": "male"
+        },
+        {
+          "place": "sicar",
+          "title": "Passagem pela Samaria",
+          "summary": "João relata o encontro de Jesus com uma mulher samaritana nas proximidades de Sicar.",
+          "ref": "John.4.4-7",
+          "period": "Ministério",
+          "icon": "male"
+        },
+        {
+          "place": "jerico",
+          "title": "Passagem por Jericó",
+          "summary": "Lucas narra a visita de Jesus a Jericó e o encontro com Zaqueu.",
+          "ref": "Luke.19.1-10",
+          "period": "Fase final do ministério",
+          "icon": "male"
+        },
+        {
+          "place": "betania",
+          "title": "Betânia",
+          "summary": "A aldeia é citada em episódios envolvendo Maria, Marta e Lázaro.",
+          "ref": "John.11.1",
+          "period": "Próximo a Jerusalém",
+          "icon": "male"
+        },
+        {
+          "place": "jerusalem",
+          "title": "Jerusalém",
+          "summary": "Os Evangelhos situam em Jerusalém a paixão, crucificação e relatos da ressurreição.",
+          "ref": "Luke.24.1-7",
+          "period": "Acontecimentos finais",
+          "icon": "male"
+        }
+      ]
+    },
+    {
+      "id": "paulo",
+      "name": "Primeira viagem de Paulo",
+      "category": "personagens",
+      "kind": "male",
+      "description": "Roteiro de Atos 13–14, incluindo o retorno de Paulo e Barnabé por cidades visitadas. As linhas são segmentos esquemáticos entre localidades atestadas.",
+      "subtitle": "Paulo e Barnabé · Atos 13–14",
+      "person": "Paulo",
+      "qualification": "Os segmentos ligam pontos citados na narrativa; não reconstituem estradas ou deslocamentos exatos.",
+      "steps": [
+        {
+          "place": "antioquia_siria",
+          "title": "Envio de Antioquia",
+          "summary": "Paulo e Barnabé são separados e enviados para a missão.",
+          "ref": "Acts.13.1-3",
+          "period": "Primeira viagem",
+          "icon": "male"
+        },
+        {
+          "place": "seleucia",
+          "title": "Embarque em Selêucia",
+          "summary": "Partem do porto de Selêucia em direção a Chipre.",
+          "ref": "Acts.13.4",
+          "period": "Primeira viagem",
+          "icon": "male"
+        },
+        {
+          "place": "salamina",
+          "title": "Chegada a Salamina",
+          "summary": "Pregam nas sinagogas judaicas de Salamina.",
+          "ref": "Acts.13.5",
+          "period": "Chipre",
+          "icon": "male"
+        },
+        {
+          "place": "pafos",
+          "title": "Passagem por Pafos",
+          "summary": "Encontram o procônsul Sérgio Paulo.",
+          "ref": "Acts.13.6-12",
+          "period": "Chipre",
+          "icon": "male"
+        },
+        {
+          "place": "perge",
+          "title": "Perge",
+          "summary": "Chegam à Panfília.",
+          "ref": "Acts.13.13",
+          "period": "Ásia Menor",
+          "icon": "male"
+        },
+        {
+          "place": "antioquia_pisidia",
+          "title": "Antioquia da Pisídia",
+          "summary": "Paulo anuncia Jesus na sinagoga da cidade.",
+          "ref": "Acts.13.14-16",
+          "period": "Ásia Menor",
+          "icon": "male"
+        },
+        {
+          "place": "iconio",
+          "title": "Icônio",
+          "summary": "A missão encontra adesão e oposição.",
+          "ref": "Acts.14.1-5",
+          "period": "Ásia Menor",
+          "icon": "male"
+        },
+        {
+          "place": "listra",
+          "title": "Listra",
+          "summary": "Os moradores confundem os missionários com deuses; Paulo sofre violência.",
+          "ref": "Acts.14.8-19",
+          "period": "Ásia Menor",
+          "icon": "male"
+        },
+        {
+          "place": "derbe",
+          "title": "Derbe",
+          "summary": "Os apóstolos anunciam o evangelho e formam discípulos.",
+          "ref": "Acts.14.20-21",
+          "period": "Ásia Menor",
+          "icon": "male"
+        },
+        {
+          "place": "listra",
+          "title": "Retorno a Listra",
+          "summary": "Retornam fortalecendo os discípulos.",
+          "ref": "Acts.14.21-23",
+          "period": "Retorno",
+          "icon": "male"
+        },
+        {
+          "place": "iconio",
+          "title": "Retorno a Icônio",
+          "summary": "Revisitam comunidades formadas na viagem.",
+          "ref": "Acts.14.21-23",
+          "period": "Retorno",
+          "icon": "male"
+        },
+        {
+          "place": "antioquia_pisidia",
+          "title": "Retorno a Antioquia da Pisídia",
+          "summary": "Acompanham os discípulos e seguem viagem.",
+          "ref": "Acts.14.21-24",
+          "period": "Retorno",
+          "icon": "male"
+        },
+        {
+          "place": "perge",
+          "title": "Passagem por Perge",
+          "summary": "Pregam a palavra em Perge.",
+          "ref": "Acts.14.25",
+          "period": "Retorno",
+          "icon": "male"
+        },
+        {
+          "place": "atalia",
+          "title": "Embarque em Atalia",
+          "summary": "Do porto de Atalia seguem para Antioquia da Síria.",
+          "ref": "Acts.14.25-26",
+          "period": "Retorno",
+          "icon": "male"
+        },
+        {
+          "place": "antioquia_siria",
+          "title": "Retorno a Antioquia",
+          "summary": "Relatam à igreja o que Deus fizera na missão.",
+          "ref": "Acts.14.26-28",
+          "period": "Fim da primeira viagem",
+          "icon": "male"
+        }
+      ]
+    },
+    {
+      "id": "abraao",
+      "name": "Jornada de Abraão",
+      "category": "personagens",
+      "kind": "male",
+      "description": "Percurso de cidades e regiões mencionadas nos relatos de Gênesis sobre Abrão/Abraão.",
+      "subtitle": "Chamado e peregrinação",
+      "person": "Abraão",
+      "qualification": "Os segmentos ligam pontos citados na narrativa; não reconstituem estradas ou deslocamentos exatos.",
+      "steps": [
+        {
+          "place": "ur",
+          "title": "Saída de Ur",
+          "summary": "Gênesis menciona a partida da família de Terá de Ur dos caldeus.",
+          "ref": "Gen.11.31",
+          "period": "Época patriarcal; data incerta",
+          "icon": "male"
+        },
+        {
+          "place": "hara",
+          "title": "Permanência em Harã",
+          "summary": "A família se estabelece em Harã; depois Abrão parte conforme o chamado.",
+          "ref": "Gen.12.4",
+          "period": "Época patriarcal",
+          "icon": "male"
+        },
+        {
+          "place": "siquem",
+          "title": "Chegada a Siquém",
+          "summary": "O texto relata a chegada de Abrão a Siquém, em Canaã.",
+          "ref": "Gen.12.6",
+          "period": "Época patriarcal",
+          "icon": "male"
+        },
+        {
+          "place": "betel",
+          "title": "Entre Betel e Ai",
+          "summary": "Abrão arma sua tenda e constrói um altar nas proximidades de Betel.",
+          "ref": "Gen.12.8",
+          "period": "Época patriarcal",
+          "icon": "male"
+        },
+        {
+          "place": "egito",
+          "title": "Viagem ao Egito",
+          "summary": "Gênesis narra uma permanência no Egito em contexto de fome. O local exato não é dado.",
+          "ref": "Gen.12.10",
+          "period": "Época patriarcal",
+          "icon": "male"
+        },
+        {
+          "place": "betel",
+          "title": "Retorno à região de Betel",
+          "summary": "Abrão retorna a um lugar em que antes havia construído um altar.",
+          "ref": "Gen.13.3-4",
+          "period": "Época patriarcal",
+          "icon": "male"
+        },
+        {
+          "place": "hebron",
+          "title": "Hebrom",
+          "summary": "O relato associa a Abraão uma residência na região de Manre, perto de Hebrom.",
+          "ref": "Gen.13.18",
+          "period": "Época patriarcal",
+          "icon": "male"
+        }
+      ]
+    },
+    {
+      "id": "maria",
+      "name": "Trajetos de Maria",
+      "category": "personagens",
+      "kind": "female",
+      "description": "Episódios dos Evangelhos que situam Maria, mãe de Jesus, em diferentes lugares; não documentam todas as suas viagens.",
+      "subtitle": "Maria, mãe de Jesus",
+      "person": "Maria, mãe de Jesus",
+      "qualification": "Os segmentos ligam pontos citados na narrativa; não reconstituem estradas ou deslocamentos exatos.",
+      "steps": [
+        {
+          "place": "nazare",
+          "title": "Anunciação em Nazaré",
+          "summary": "O anjo Gabriel é enviado a Maria em Nazaré.",
+          "ref": "Luke.1.26-38",
+          "period": "Antes do nascimento",
+          "icon": "female"
+        },
+        {
+          "place": "belem",
+          "title": "Nascimento em Belém",
+          "summary": "Maria dá à luz Jesus em Belém.",
+          "ref": "Luke.2.4-7",
+          "period": "Nascimento de Jesus",
+          "icon": "female"
+        },
+        {
+          "place": "egito",
+          "title": "Refúgio no Egito",
+          "summary": "Mateus narra que José levou o menino e sua mãe ao Egito; não identifica a cidade.",
+          "ref": "Matt.2.13-14",
+          "period": "Infância de Jesus",
+          "icon": "female"
+        },
+        {
+          "place": "nazare",
+          "title": "Retorno à Galileia",
+          "summary": "A família volta e passa a viver em Nazaré.",
+          "ref": "Matt.2.23",
+          "period": "Infância de Jesus",
+          "icon": "female"
+        },
+        {
+          "place": "jerusalem",
+          "title": "Maria em Jerusalém",
+          "summary": "João relata a presença da mãe de Jesus junto à cruz.",
+          "ref": "John.19.25",
+          "period": "Crucificação",
+          "icon": "female"
+        }
+      ]
+    },
+    {
+      "id": "rute",
+      "name": "Rute e Noemi",
+      "category": "personagens",
+      "kind": "female",
+      "description": "Trajeto da região de Moabe até Belém, conforme o livro de Rute.",
+      "subtitle": "Rute · fidelidade e recomeço",
+      "person": "Rute",
+      "qualification": "Os segmentos ligam pontos citados na narrativa; não reconstituem estradas ou deslocamentos exatos.",
+      "steps": [
+        {
+          "place": "moabe_rute",
+          "title": "Vida em Moabe",
+          "summary": "A família de Elimeleque se estabelecera em Moabe, onde Rute se tornou parte da família.",
+          "ref": "Ruth.1.4",
+          "period": "Tempo dos juízes",
+          "icon": "female"
+        },
+        {
+          "place": "moabe_rute",
+          "title": "Decisão de acompanhar Noemi",
+          "summary": "Rute decide acompanhar Noemi em sua volta a Judá.",
+          "ref": "Ruth.1.16",
+          "period": "Tempo dos juízes",
+          "icon": "female"
+        },
+        {
+          "place": "belem",
+          "title": "Chegada a Belém",
+          "summary": "Rute e Noemi chegam a Belém no início da colheita da cevada.",
+          "ref": "Ruth.1.22",
+          "period": "Tempo dos juízes",
+          "icon": "female"
+        }
+      ]
+    },
+    {
+      "id": "exodo",
+      "name": "Êxodo de Israel",
+      "category": "povos",
+      "kind": "group",
+      "description": "Deslocamento coletivo do povo de Israel, apresentado como esquema didático. Grande parte do percurso é historicamente debatida e não pode ser traçada com exatidão.",
+      "subtitle": "Israel · Egito ao vale do Jordão",
+      "person": null,
+      "qualification": "Trajeto hipotético para estudo; não representa consenso sobre o Êxodo nem prova arqueológica dos pontos traçados.",
+      "steps": [
+        {
+          "place": "goshen",
+          "title": "Povo de Israel no Egito",
+          "summary": "Gênesis e Êxodo situam os israelitas na terra de Gósen, área não estabelecida exatamente.",
+          "ref": "Exod.1.7",
+          "period": "Cronologia disputada",
+          "icon": "group"
+        },
+        {
+          "place": "rameses",
+          "title": "Saída de Ramessés",
+          "summary": "Êxodo registra a partida de Ramessés; a identificação do sítio é discutida.",
+          "ref": "Exod.12.37",
+          "period": "Cronologia disputada",
+          "icon": "group"
+        },
+        {
+          "place": "mar_travessia",
+          "title": "Travessia do mar",
+          "summary": "O local exato da travessia é desconhecido; este ponto é apenas ilustrativo.",
+          "ref": "Exod.14.21-22",
+          "period": "Cronologia disputada",
+          "icon": "group"
+        },
+        {
+          "place": "sinai",
+          "title": "Aliança no Sinai",
+          "summary": "O relato apresenta a chegada ao monte Sinai e os acontecimentos da aliança.",
+          "ref": "Exod.19.1",
+          "period": "Cronologia disputada",
+          "icon": "group"
+        },
+        {
+          "place": "cades",
+          "title": "Acampamento em Cades",
+          "summary": "Cades-Barneia aparece no período de peregrinação no deserto.",
+          "ref": "Num.13.26",
+          "period": "Cronologia disputada",
+          "icon": "group"
+        },
+        {
+          "place": "moabe",
+          "title": "Planícies de Moabe",
+          "summary": "Israel acampa nas planícies de Moabe, a leste do Jordão.",
+          "ref": "Num.22.1",
+          "period": "Cronologia disputada",
+          "icon": "group"
+        },
+        {
+          "place": "jerico",
+          "title": "Travessia e entrada em Canaã",
+          "summary": "O livro de Josué relata a travessia do Jordão e eventos associados a Jericó.",
+          "ref": "Josh.3.17",
+          "period": "Cronologia disputada",
+          "icon": "group"
+        }
+      ]
+    },
+    {
+      "id": "exilio",
+      "name": "Exílio de Judá",
+      "category": "povos",
+      "kind": "group",
+      "description": "Marco narrativo da deportação de parte da população judaíta para o império babilônico. As linhas sintetizam deslocamentos, não itinerários individuais.",
+      "subtitle": "Judá · século VI a.C.",
+      "person": null,
+      "qualification": "Sequência representativa de relatos diferentes; não significa que todos os deportados passaram por Ribla.",
+      "steps": [
+        {
+          "place": "jerusalem",
+          "title": "Queda de Jerusalém",
+          "summary": "A conquista babilônica culmina em destruição e deportações.",
+          "ref": "2Kgs.25.8-11",
+          "period": "587/586 a.C. (aprox.)",
+          "icon": "group"
+        },
+        {
+          "place": "ribla",
+          "title": "Captura do rei Zedequias",
+          "summary": "Zedequias é levado a Ribla para julgamento segundo 2 Reis 25.",
+          "ref": "2Kgs.25.6",
+          "period": "587/586 a.C. (aprox.)",
+          "icon": "group"
+        },
+        {
+          "place": "babilonia",
+          "title": "Exílio na Babilônia",
+          "summary": "Parte da população é deportada; outras comunidades vivem fora da cidade, no território babilônico.",
+          "ref": "2Kgs.25.11",
+          "period": "Século VI a.C.",
+          "icon": "group"
+        }
+      ]
+    },
+    {
+      "id": "retorno",
+      "name": "Retorno do exílio",
+      "category": "povos",
+      "kind": "group",
+      "description": "Depois da conquista persa da Babilônia, grupos de exilados retornam a Jerusalém; caminhos precisos não são narrados em detalhe.",
+      "subtitle": "Babilônia → Jerusalém",
+      "person": null,
+      "qualification": "Ligação direta no mapa apenas indica origem e destino; não reconstrói a estrada percorrida.",
+      "steps": [
+        {
+          "place": "babilonia",
+          "title": "Autorização para retornar",
+          "summary": "O decreto apresentado em Esdras 1 encoraja o retorno e a reconstrução do templo.",
+          "ref": "Ezra.1.1-3",
+          "period": "A partir de 539/538 a.C.",
+          "icon": "group"
+        },
+        {
+          "place": "jerusalem",
+          "title": "Reorganização em Jerusalém",
+          "summary": "Os repatriados atuam na restauração do culto e na reconstrução do templo.",
+          "ref": "Ezra.3.1-3",
+          "period": "Séculos VI–V a.C.",
+          "icon": "group"
+        }
+      ]
+    },
+    {
+      "id": "conquista",
+      "name": "Campanhas de Josué",
+      "category": "povos",
+      "kind": "group",
+      "description": "Visão geográfica de lugares citados nas campanhas narradas em Josué; cronologia e historicidade são temas de investigação.",
+      "subtitle": "Josué · lugares da narrativa",
+      "person": null,
+      "qualification": "Sequência temática dos episódios de Josué. As datas e a correspondência arqueológica são debatidas.",
+      "steps": [
+        {
+          "place": "moabe",
+          "title": "Israel a leste do Jordão",
+          "summary": "O povo se aproxima da entrada em Canaã.",
+          "ref": "Josh.1.2",
+          "period": "Cronologia discutida",
+          "icon": "group"
+        },
+        {
+          "place": "galgala",
+          "title": "Acampamento em Gilgal",
+          "summary": "A narrativa situa o primeiro acampamento após a travessia.",
+          "ref": "Josh.4.19",
+          "period": "Cronologia discutida",
+          "icon": "group"
+        },
+        {
+          "place": "jerico",
+          "title": "Jericó",
+          "summary": "O relato de Josué descreve o episódio das muralhas de Jericó.",
+          "ref": "Josh.6.20",
+          "period": "Cronologia discutida",
+          "icon": "group"
+        },
+        {
+          "place": "hazor",
+          "title": "Hazor",
+          "summary": "O relato situa em Hazor uma das campanhas do norte.",
+          "ref": "Josh.11.10-11",
+          "period": "Cronologia discutida",
+          "icon": "group"
+        }
+      ]
+    },
+    {
+      "id": "historia",
+      "name": "História bíblica — panorama",
+      "category": "historia",
+      "kind": "event",
+      "description": "Uma linha do tempo geral com marcos da narrativa bíblica e sua localização aproximada no mundo antigo. Os pontos não formam uma viagem de um único povo.",
+      "subtitle": "Panorama de épocas, povos e personagens",
+      "person": null,
+      "qualification": "Marcos de períodos diferentes: os saltos entre pontos NÃO representam viagens contínuas. Datas antigas e relações históricas são aproximadas.",
+      "steps": [
+        {
+          "place": "ur",
+          "title": "Época dos patriarcas",
+          "summary": "Tradições de Gênesis situam a história de Abraão na Mesopotâmia e em Canaã.",
+          "ref": "Gen.11.31",
+          "period": "Época patriarcal · data debatida",
+          "icon": "male"
+        },
+        {
+          "place": "goshen",
+          "title": "Israel no Egito",
+          "summary": "A narrativa do Êxodo começa com a permanência dos israelitas no Egito.",
+          "ref": "Exod.1.7",
+          "period": "Cronologia disputada",
+          "icon": "group"
+        },
+        {
+          "place": "sinai",
+          "title": "Aliança no Sinai",
+          "summary": "O livro de Êxodo apresenta a aliança no Sinai.",
+          "ref": "Exod.19.1",
+          "period": "Cronologia disputada",
+          "icon": "group"
+        },
+        {
+          "place": "jerico",
+          "title": "Narrativas da entrada em Canaã",
+          "summary": "Josué descreve a travessia do Jordão e episódios em Canaã.",
+          "ref": "Josh.3.17",
+          "period": "Cronologia disputada",
+          "icon": "group"
+        },
+        {
+          "place": "jerusalem",
+          "title": "Monarquia davídica",
+          "summary": "Davi estabelece Jerusalém como centro político.",
+          "ref": "2Sam.5.6-9",
+          "period": "c. século X a.C.",
+          "icon": "male"
+        },
+        {
+          "place": "samaria_cidade",
+          "title": "Queda de Samaria",
+          "summary": "A capital do reino do norte cai para os assírios.",
+          "ref": "2Kgs.17.6",
+          "period": "722/721 a.C. (aprox.)",
+          "icon": "group"
+        },
+        {
+          "place": "babilonia",
+          "title": "Exílio de Judá",
+          "summary": "Após a conquista babilônica, parte da população é deportada.",
+          "ref": "2Kgs.25.11",
+          "period": "587/586 a.C. (aprox.)",
+          "icon": "group"
+        },
+        {
+          "place": "jerusalem",
+          "title": "Retorno do exílio",
+          "summary": "O livro de Esdras registra o retorno de exilados e a reconstrução.",
+          "ref": "Ezra.1.1-3",
+          "period": "Após 539/538 a.C.",
+          "icon": "group"
+        },
+        {
+          "place": "belem",
+          "title": "Nascimento de Jesus",
+          "summary": "Os Evangelhos situam o nascimento de Jesus em Belém.",
+          "ref": "Luke.2.7",
+          "period": "c. 6–4 a.C.",
+          "icon": "male"
+        },
+        {
+          "place": "jerusalem",
+          "title": "Pentecostes e igreja primitiva",
+          "summary": "Atos 2 narra os acontecimentos do Pentecostes em Jerusalém.",
+          "ref": "Acts.2.1-4",
+          "period": "Século I d.C.",
+          "icon": "group"
+        },
+        {
+          "place": "antioquia_siria",
+          "title": "Expansão missionária",
+          "summary": "Antioquia torna-se importante centro de envio missionário.",
+          "ref": "Acts.13.1-3",
+          "period": "c. meados do século I d.C.",
+          "icon": "group"
+        },
+        {
+          "place": "roma",
+          "title": "Pregação em Roma",
+          "summary": "O final de Atos situa Paulo pregando em Roma.",
+          "ref": "Acts.28.16",
+          "period": "c. década de 60 d.C.",
+          "icon": "male"
+        }
+      ]
+    },
+    {
+      "id": "moises",
+      "name": "Moisés e a travessia",
+      "category": "personagens",
+      "kind": "male",
+      "description": "Episódios associados à liderança de Moisés desde o Egito até as planícies de Moabe. Os locais de algumas etapas são discutidos.",
+      "subtitle": "Moisés · libertação e aliança",
+      "person": "Moisés",
+      "qualification": "O local exato da travessia, o monte Sinai e diversas etapas no deserto são temas de debate; linha apenas esquemática.",
+      "steps": [
+        {
+          "place": "rameses",
+          "title": "Libertação do Egito",
+          "summary": "A saída dos israelitas é descrita no livro de Êxodo.",
+          "ref": "Exod.12.37",
+          "period": "Cronologia disputada",
+          "icon": "male"
+        },
+        {
+          "place": "mar_travessia",
+          "title": "Travessia do mar",
+          "summary": "Moisés estende a mão sobre o mar; o local é representado apenas de maneira ilustrativa.",
+          "ref": "Exod.14.21",
+          "period": "Cronologia disputada",
+          "icon": "male"
+        },
+        {
+          "place": "sinai",
+          "title": "Encontro no Sinai",
+          "summary": "A narrativa descreve Moisés recebendo a Lei no monte Sinai.",
+          "ref": "Exod.19.20",
+          "period": "Cronologia disputada",
+          "icon": "male"
+        },
+        {
+          "place": "cades",
+          "title": "Cades-Barneia",
+          "summary": "Os relatos do deserto mencionam Cades e eventos envolvendo Moisés.",
+          "ref": "Num.20.1",
+          "period": "Cronologia disputada",
+          "icon": "male"
+        },
+        {
+          "place": "moabe",
+          "title": "Últimos discursos",
+          "summary": "Deuteronômio situa o encerramento da trajetória de Moisés próximo às planícies de Moabe.",
+          "ref": "Deut.34.1",
+          "period": "Cronologia disputada",
+          "icon": "male"
+        }
+      ]
+    },
+    {
+      "id": "davi",
+      "name": "Davi: de pastor a rei",
+      "category": "personagens",
+      "kind": "male",
+      "description": "Três centros geográficos fundamentais da trajetória de Davi, sem representar as muitas outras movimentações narradas em Samuel.",
+      "subtitle": "Davi · pastor, rei e Jerusalém",
+      "person": "Davi",
+      "qualification": "Os segmentos ligam pontos citados na narrativa; não reconstituem estradas ou deslocamentos exatos.",
+      "steps": [
+        {
+          "place": "belem",
+          "title": "Davi em Belém",
+          "summary": "Samuel unge Davi, filho de Jessé, em Belém.",
+          "ref": "1Sam.16.13",
+          "period": "c. século XI–X a.C.",
+          "icon": "male"
+        },
+        {
+          "place": "hebron",
+          "title": "Reinado em Hebrom",
+          "summary": "Davi começa a reinar sobre Judá em Hebrom.",
+          "ref": "2Sam.2.11",
+          "period": "c. século X a.C.",
+          "icon": "male"
+        },
+        {
+          "place": "jerusalem",
+          "title": "Capital em Jerusalém",
+          "summary": "A narrativa relata que Davi conquista a fortaleza de Sião e reina em Jerusalém.",
+          "ref": "2Sam.5.6-9",
+          "period": "c. século X a.C.",
+          "icon": "male"
+        }
+      ]
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel e o exílio",
+      "category": "personagens",
+      "kind": "male",
+      "description": "Do contexto da conquista de Judá para a corte babilônica. As coordenadas ligam os centros narrativos, não a estrada percorrida.",
+      "subtitle": "Daniel · Jerusalém e Babilônia",
+      "person": "Daniel",
+      "qualification": "Os segmentos ligam pontos citados na narrativa; não reconstituem estradas ou deslocamentos exatos.",
+      "steps": [
+        {
+          "place": "jerusalem",
+          "title": "Jovens de Judá",
+          "summary": "O livro de Daniel situa sua abertura no contexto de Jerusalém e do domínio babilônico.",
+          "ref": "Dan.1.1-6",
+          "period": "Século VI a.C.",
+          "icon": "male"
+        },
+        {
+          "place": "babilonia",
+          "title": "Daniel na corte",
+          "summary": "Daniel e outros judeus passam a servir na corte babilônica.",
+          "ref": "Dan.1.6-7",
+          "period": "Século VI a.C.",
+          "icon": "male"
+        }
+      ]
+    },
+    {
+      "id": "igreja",
+      "name": "Expansão da igreja primitiva",
+      "category": "historia",
+      "kind": "event",
+      "description": "Marcos geográficos da difusão inicial do cristianismo. A sequência representa acontecimentos em locais diferentes, não um único grupo viajando continuamente.",
+      "subtitle": "Atos · da Judeia à região mediterrânea",
+      "person": null,
+      "qualification": "A linha do tempo mostra etapas de propagação, sem representar uma rota de um só missionário ou povo. O marcador da Samaria é regional.",
+      "steps": [
+        {
+          "place": "jerusalem",
+          "title": "Pentecostes em Jerusalém",
+          "summary": "Atos 2 situa o Pentecostes e a pregação de Pedro em Jerusalém.",
+          "ref": "Acts.2.1-4",
+          "period": "Século I d.C.",
+          "icon": "group"
+        },
+        {
+          "place": "sicar",
+          "title": "Pregação na Samaria",
+          "summary": "Atos 8 menciona o anúncio do evangelho em uma cidade da Samaria, não identificada aqui com precisão.",
+          "ref": "Acts.8.5",
+          "period": "Século I d.C.",
+          "icon": "group"
+        },
+        {
+          "place": "antioquia_siria",
+          "title": "Comunidade em Antioquia",
+          "summary": "Os discípulos recebem o nome de cristãos em Antioquia.",
+          "ref": "Acts.11.26",
+          "period": "Século I d.C.",
+          "icon": "group"
+        },
+        {
+          "place": "salamina",
+          "title": "Pregação em Chipre",
+          "summary": "Paulo e Barnabé anunciam a palavra em Salamina.",
+          "ref": "Acts.13.5",
+          "period": "Século I d.C.",
+          "icon": "group"
+        },
+        {
+          "place": "efeso",
+          "title": "Ação em Éfeso",
+          "summary": "Atos narra a permanência de Paulo e o alcance da mensagem na Ásia.",
+          "ref": "Acts.19.10",
+          "period": "Século I d.C.",
+          "icon": "group"
+        },
+        {
+          "place": "roma",
+          "title": "Pregação em Roma",
+          "summary": "Atos conclui com Paulo recebendo pessoas e anunciando o reino em Roma.",
+          "ref": "Acts.28.30-31",
+          "period": "Século I d.C.",
+          "icon": "male"
+        }
+      ]
+    },
+    {
+      "id": "reinos",
+      "name": "Reinos de Israel e Judá",
+      "category": "historia",
+      "kind": "event",
+      "description": "Dois centros políticos, Samaria e Jerusalém, e seus destinos nas campanhas dos impérios da Assíria e Babilônia.",
+      "subtitle": "Monarquia dividida, conquistas e derrotas",
+      "person": null,
+      "qualification": "Este painel compara acontecimentos político-militares. Os saltos entre pontos não são movimentos de tropas documentados.",
+      "steps": [
+        {
+          "place": "jerusalem",
+          "title": "Reino de Judá",
+          "summary": "Depois da divisão, Jerusalém permanece como centro do reino de Judá.",
+          "ref": "1Kgs.12.17",
+          "period": "Após a divisão do reino",
+          "icon": "group"
+        },
+        {
+          "place": "samaria_cidade",
+          "title": "Samaria, capital de Israel",
+          "summary": "Onri constrói Samaria, que se torna capital do reino do norte.",
+          "ref": "1Kgs.16.24",
+          "period": "Século IX a.C. (aprox.)",
+          "icon": "group"
+        },
+        {
+          "place": "samaria_cidade",
+          "title": "Derrota do reino do norte",
+          "summary": "Samaria cai para os assírios; 2 Reis menciona deportações.",
+          "ref": "2Kgs.17.6",
+          "period": "722/721 a.C. (aprox.)",
+          "icon": "group"
+        },
+        {
+          "place": "jerusalem",
+          "title": "Derrota de Judá",
+          "summary": "Jerusalém é conquistada e o templo destruído pelos babilônios.",
+          "ref": "2Kgs.25.8-11",
+          "period": "587/586 a.C. (aprox.)",
+          "icon": "group"
+        }
+      ]
+    },
+    {
+      "id": "jose",
+      "name": "José do Egito",
+      "category": "personagens",
+      "kind": "male",
+      "description": "Do contexto familiar em Canaã à experiência de José no Egito, sem determinar o local da residência egípcia.",
+      "subtitle": "José · de Canaã ao Egito",
+      "person": "José do Egito",
+      "qualification": "Não há identificação pontual do local egípcio em que José permaneceu; o mapa usa um marcador regional.",
+      "steps": [
+        {
+          "place": "hebron",
+          "title": "José e seus irmãos",
+          "summary": "A história de José começa na terra de Canaã, no âmbito da família de Jacó.",
+          "ref": "Gen.37.1-3",
+          "period": "Época patriarcal",
+          "icon": "male"
+        },
+        {
+          "place": "egito",
+          "title": "José é levado ao Egito",
+          "summary": "José é vendido e levado ao Egito, onde sua história prossegue na corte.",
+          "ref": "Gen.39.1",
+          "period": "Época patriarcal",
+          "icon": "male"
+        }
+      ]
+    }
+  ],
+  "personPlaces": {
+    "Jesus": [
+      "belem",
+      "egito",
+      "nazare",
+      "jordao",
+      "deserto",
+      "cana",
+      "capernaum",
+      "galileia",
+      "sicar",
+      "jerico",
+      "betania",
+      "jerusalem",
+      "tiro",
+      "sidom"
+    ],
+    "Paulo": [
+      "antioquia_siria",
+      "seleucia",
+      "salamina",
+      "pafos",
+      "perge",
+      "antioquia_pisidia",
+      "iconio",
+      "listra",
+      "derbe",
+      "atalia",
+      "damasco",
+      "efeso",
+      "corinto",
+      "atenas",
+      "roma"
+    ],
+    "Abraão": [
+      "ur",
+      "hara",
+      "siquem",
+      "betel",
+      "egito",
+      "hebron"
+    ],
+    "Moisés": [
+      "goshen",
+      "rameses",
+      "mar_travessia",
+      "sinai",
+      "cades",
+      "moabe"
+    ],
+    "Maria, mãe de Jesus": [
+      "nazare",
+      "belem",
+      "egito",
+      "jerusalem"
+    ],
+    "Rute": [
+      "moabe_rute",
+      "belem"
+    ],
+    "Davi": [
+      "belem",
+      "hebron",
+      "jerusalem"
+    ],
+    "Daniel": [
+      "jerusalem",
+      "babilonia"
+    ],
+    "José do Egito": [
+      "hebron",
+      "egito"
+    ],
+    "Pedro": [
+      "galileia",
+      "capernaum",
+      "jerusalem",
+      "cesareia"
+    ],
+    "Josué": [
+      "moabe",
+      "galgala",
+      "jerico",
+      "hazor"
+    ],
+    "Ester": [
+      "susa"
+    ],
+    "Elias": [
+      "jordao"
+    ],
+    "João Batista": [
+      "jordao"
+    ],
+    "Neemias": [
+      "susa",
+      "jerusalem"
+    ],
+    "Esdras": [
+      "babilonia",
+      "jerusalem"
+    ],
+    "Salomão": [
+      "jerusalem"
+    ]
+  }
+}
