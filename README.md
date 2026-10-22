@@ -108,3 +108,8 @@ Datas, georreferências e itinerários antigos são indicativos e podem ser deba
 - Resumos, dados geográficos selecionados e a lógica visual fornecidos neste projeto são editoriais; manter as atribuições externas. A publicação do código sob uma licença de terceiros (MIT, GPL etc.) pode ser decidida pelo responsável pelo repositório.
 
 Documentação detalhada: [FONTES_E_LIMITES.md](FONTES_E_LIMITES.md).
+
+
+## Publicação no Render
+
+O repositório inclui [render.yaml](render.yaml) para implantar o Atlas com os bancos completos (diretório `publicacao_github`) como um site estático chamado `atlasbiblico`. Consulte o guia [PUBLICAR_NO_RENDER.md](PUBLICAR_NO_RENDER.md) para criar o serviço no painel do Render e verificar a publicação. O endereço `atlasbiblico.onrender.com` depende de disponibilidade.
