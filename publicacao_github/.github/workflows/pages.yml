@@ -1,0 +1,45 @@
+name: Publicar Atlas Bíblico completo (GitHub Pages)
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar arquivos
+        uses: actions/checkout@v4
+      - name: Conferir bancos publicados
+        shell: bash
+        run: |
+          test -f index.html
+          test -f atlas.html
+          test -f dados/biblia_completa.json
+          test -f dados/enciclopedia_total.js
+          ls dados/cross_references*.txt >/dev/null
+          python - <<'PYTEST'
+          import json
+          with open('dados/biblia_completa.json', encoding='utf-8') as f:
+              bible=json.load(f)
+          assert len(bible.get('books', []))==66, 'Bíblia com menos de 66 livros'
+          print('Site e bancos estáticos validados.')
+          PYTEST
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+      - name: Preparar site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Publicar site
+        id: deploy
+        uses: actions/deploy-pages@v4

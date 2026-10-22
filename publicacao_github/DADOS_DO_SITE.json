@@ -1,0 +1,13 @@
+{
+  "livros": 66,
+  "linhas_referencias": 344800,
+  "entidades": {
+    "people": 3109,
+    "places": 1335,
+    "events": 476
+  },
+  "partes_referencias": 1,
+  "arquivos_publicacao": 18,
+  "tamanho_total_mib": 15.37,
+  "arquivo_mais_pesado_mib": 7.92
+}

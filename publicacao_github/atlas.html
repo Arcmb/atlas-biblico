@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#071321">
+  <meta name="description" content="Mapa bíblico interativo e offline: personagens, povos, migrações, lugares, rotas e linha do tempo em português.">
+  <title>Atlas Histórico • Conexões Bíblicas</title>
+  <link rel="stylesheet" href="atlas.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <a class="identity" href="index.html" title="Voltar às conexões bíblicas">
+      <span class="identity-mark" aria-hidden="true">✥</span>
+      <span><strong>ATLAS <em>BÍBLICO</em></strong><small>A Escritura no espaço e no tempo</small></span>
+    </a>
+    <div class="sidebar-separator"></div>
+    <div class="nav-label">MÓDULOS DO PROJETO</div>
+    <a class="nav-link" href="index.html"><span class="nav-icon">⌁</span> Conexões bíblicas <span class="nav-end">↗</span></a>
+    <a class="nav-link active" href="atlas.html"><span class="nav-icon">◈</span> Atlas geográfico</a>
+    <button class="nav-link" type="button" id="navTimeline"><span class="nav-icon">◷</span> Linha do tempo</button>
+    <button class="nav-link" type="button" id="navCharacters"><span class="nav-icon">♧</span> Personagens e lugares</button>
+    <div class="sidebar-separator"></div>
+    <div class="nav-label">ESCOLHA O TIPO DE EXPLORAÇÃO</div>
+    <div class="category-set" role="group" aria-label="Categoria de roteiro">
+      <button class="category active" data-category="personagens" type="button">Personagens</button>
+      <button class="category" data-category="povos" type="button">Povos</button>
+      <button class="category" data-category="historia" type="button">História geral</button>
+    </div>
+    <label class="field-label" for="journeySelect">Roteiro no mapa</label>
+    <select id="journeySelect" class="input"></select>
+    <div class="journey-short" id="journeyIntro"></div>
+    <div class="sidebar-separator"></div>
+    <div class="nav-label">PESQUISA NO BANCO LOCAL</div>
+    <label class="field-label" for="entitySearch">Personagem, cidade ou local</label>
+    <div class="input-search"><span>⌕</span><input id="entitySearch" placeholder="Ex.: Jerusalém, Maria, Rute..." autocomplete="off"></div>
+    <div id="searchResults" class="search-results" aria-live="polite"></div>
+    <div class="offline-note"><span class="note-orbit">◎</span><div><strong>Dados locais disponíveis</strong><small>Consulta sem internet. Os trajetos indicam os graus de certeza geográfica.</small></div></div>
+    <div class="side-end">EDIÇÃO INICIAL • PROJETO OFFLINE<br><span>Base geográfica e linhas do tempo</span></div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar-intro"><button id="menuBtn" class="mobile-menu" type="button" aria-label="Abrir menu">☰</button><div><div class="eyebrow">EXPLORAÇÃO HISTÓRICA • ESCRITURAS</div><h1>História bíblica <span>em movimento.</span></h1></div></div>
+      <div class="top-actions"><span class="live-tag"><i></i> CONSULTA OFFLINE</span><a class="btn line" href="index.html">Abrir conexões →</a></div>
+    </header>
+    <div class="content">
+      <section class="intro-row">
+        <div><span class="section-index">ATLAS INTERATIVO / 01</span><h2 id="journeyTitle">Vida de Jesus</h2><p id="journeySubtitle">Infância, ministério e últimos acontecimentos</p></div>
+        <div class="stats"><div><b id="totalPlaces">50</b><span>locais catalogados</span></div><div><b id="totalRoutes">10</b><span>roteiros disponíveis</span></div><div><b id="totalStops">69</b><span>etapas documentadas</span></div></div>
+      </section>
+      <div class="atlas-grid">
+        <section class="map-card panel" aria-label="Mapa histórico da Bíblia">
+          <header class="card-heading"><div><div class="section-index light">GEOGRAFIA HISTÓRICA / ROTAS E LOCALIDADES</div><h3 id="mapHeader">Caminhos da narrativa</h3><p>Selecione um marcador no mapa ou avance na linha do tempo.</p></div><div class="map-tools"><button type="button" id="zoomOut" aria-label="Diminuir zoom" title="Afastar">−</button><button type="button" id="zoomFit" title="Enquadrar rota">Enquadrar</button><button type="button" id="zoomIn" aria-label="Aumentar zoom" title="Aproximar">+</button><button type="button" id="exportMap" title="Salvar mapa SVG">↓ SVG</button></div></header>
+          <div class="map-stage" id="mapStage"><svg viewBox="0 0 1280 700" id="mapSvg" role="img" aria-label="Mapa geográfico com pontos e linhas de percursos bíblicos">
+          <defs>
+            <linearGradient id="seaShade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d2439"/><stop offset=".55" stop-color="#0d1c34"/><stop offset="1" stop-color="#142341"/></linearGradient>
+            <linearGradient id="landShade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#263b4d"/><stop offset="1" stop-color="#1b2d40"/></linearGradient>
+            <filter id="halo"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <symbol id="personMale" viewBox="-12 -16 24 38"><circle cx="0" cy="-9" r="5" fill="currentColor"/><path d="M-7 2L-4 -1H4L7 2M0 -2V10M-7 2L-10 11M7 2L10 11M0 10L-7 21M0 10L7 21" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+            <symbol id="personFemale" viewBox="-12 -16 24 38"><circle cx="0" cy="-9" r="5" fill="currentColor"/><path d="M-5 -1L5 -1L9 14H-9Z" fill="currentColor"/><path d="M-7 3L-11 10M7 3L11 10M-3 14L-4 21M3 14L4 21" stroke="currentColor" fill="none" stroke-width="3" stroke-linecap="round"/></symbol>
+            <symbol id="peopleGroup" viewBox="-20 -15 40 36"><circle cx="-10" cy="-6" r="4" fill="currentColor"/><circle cx="10" cy="-6" r="4" fill="currentColor"/><circle cx="0" cy="-10" r="5" fill="currentColor"/><path d="M-17 14V4Q-17 -1 -10 -1Q-4 -1 -4 5V14M4 14V5Q4 -1 10 -1Q17 -1 17 4V14M-7 17V3Q-7 -2 0 -2Q7 -2 7 3V17" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></symbol>
+            <clipPath id="mapClip"><rect width="1280" height="700"/></clipPath>
+          </defs>
+          <rect width="1280" height="700" fill="url(#seaShade)"/>
+          <g id="mapGraphics" clip-path="url(#mapClip)"></g>
+          <g id="mapSymbols"></g>
+          <g id="mapActive"></g>
+          <g id="mapOverlays"></g>
+          </svg>
+          <div class="compass"><span>N</span><b>↑</b></div>
+          <div class="map-legend"><span><i class="pin-dot"></i> Local bíblico</span><span><i class="route-line"></i> Conexão de roteiro</span><span class="legend-person">♟ Personagem / povo</span></div>
+          <div class="map-scale">Localizações modernas aproximadas · sem demarcar fronteiras antigas</div>
+          </div>
+          <div class="map-playbar">
+            <button class="play-btn" type="button" id="playBtn" aria-label="Iniciar animação"><span id="playGlyph">▶</span></button>
+            <button class="step-btn" type="button" id="prevBtn" title="Etapa anterior">❮</button>
+            <button class="step-btn" type="button" id="nextBtn" title="Próxima etapa">❯</button>
+            <div class="play-middle"><div class="range-caption"><span id="playStatus">Etapa 1 de 11</span><strong id="playPosition">01 / 11</strong></div><input type="range" id="storySlider" min="0" max="1000" value="0" step="1" aria-label="Percorrer linha do tempo"></div>
+            <select id="speedSelect" aria-label="Velocidade da animação"><option value="0.55">0,5×</option><option selected value="1">1×</option><option value="1.6">1,6×</option><option value="2.5">2,5×</option></select>
+          </div>
+        </section>
+        <aside class="inspector panel" id="inspector" aria-live="polite">
+          <div class="inspector-header"><div class="section-index">PONTO SELECIONADO / NARRATIVA</div><div class="stage-step"><span class="step-bubble" id="stepBadge">01</span><span id="stepPeriod">c. 6–4 a.C.</span></div><h3 id="stepTitle">Nascimento em Belém</h3><p id="stepPlace">Belém da Judeia</p></div>
+          <div class="inspector-content"><p id="stepSummary"></p><div class="mini-rule"></div><div class="section-index light">REFERÊNCIAS DA ETAPA</div><div id="stepRefs" class="ref-tags"></div><div class="mini-rule"></div><div class="section-index light">LOCALIZAÇÃO E CONTEXTO</div><p id="placeSummary"></p><div id="placeCertainty" class="certainty"></div><button type="button" class="btn strong inspector-button" id="readStep">Explorar versículo no atlas ↗</button><div id="journeyCaution" class="caution"></div></div>
+        </aside>
+      </div>
+      <section class="timeline-panel panel" id="timelinePanel">
+        <header class="timeline-header"><div><span class="section-index light">LINHA DO TEMPO / 02</span><h2>O desenrolar da história</h2><p>Clique em uma etapa para posicionar o personagem ou povo no mapa.</p></div><span class="timeline-total" id="timelineCount">11 ETAPAS</span></header>
+        <div class="timeline-track" id="timelineTrack" aria-label="Etapas do roteiro"></div>
+      </section>
+      <section class="bio-grid" id="biosPanel">
+        <article class="panel bio-card"><div class="section-index light">PERSONAGENS, LUGARES E CONEXÕES</div><h2 id="bioTitle">Explore a enciclopédia local</h2><p id="bioSummary">Selecione um nome ou local na pesquisa lateral. Quando há posições geográficas verificadas, elas aparecem como marcadores no mapa.</p><div id="bioRefs" class="ref-tags"></div></article>
+        <article class="panel note-card"><div class="section-index light">INTERPRETAÇÃO DOS DADOS</div><h3>O mapa distingue fato e aproximação.</h3><p>As cidades modernas servem de referência espacial. Eventos bíblicos com localização discutida usam marcadores aproximados e cada etapa informa suas passagens. Linhas não equivalem a estradas ou fronteiras historicamente demonstradas.</p><div class="notes-legend"><span>◌ Georreferência aproximada</span><span>⌁ Percurso esquemático</span><span>♙ Figuras e grupos</span></div></article>
+      </section>
+      <footer class="footer">Atlas Histórico Bíblico • Cartografia Natural Earth (domínio público) • Referências textuais e localizações qualificadas nas fichas • <a href="index.html">Voltar às conexões</a> • <a href="FONTES_E_LIMITES.md">Fontes e limites</a></footer>
+    </div>
+  </div>
+</div>
+<div class="modal-wrap" id="placeModal" aria-hidden="true"><div class="modal-overlay" data-close="true"></div><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-header"><div><span class="section-index light">ENCICLOPÉDIA / LOCALIZAÇÃO BÍBLICA</span><h3 id="modalTitle">Local</h3></div><button type="button" id="closeModal" class="icon-close" aria-label="Fechar popup">×</button></div><p id="modalDesc"></p><div id="modalExtra" class="certainty"></div><div class="section-index light">REFERÊNCIAS BÍBLICAS</div><div id="modalRefs" class="ref-tags"></div><div class="modal-footer"><button class="btn line" id="modalCloseBottom" type="button">Fechar</button></div></div></div>
+<script src="dados/atlas_historico.js"></script>
+<script src="dados/mapa_costas.js"></script>
+<script src="dados/enciclopedia_total.js"></script>
+<script src="atlas.js"></script>
+</body>
+</html>

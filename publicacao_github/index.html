@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07101d">
+  <meta name="description" content="Atlas interativo de referências cruzadas da Bíblia: arcos clicáveis e diagrama de versículos.">
+  <title>Atlas de Conexões Bíblicas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="research.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 42" fill="none"><path d="M21 32C15 28.5 9 28 3 30V8c7-2 13-1 18 3 5-4 11-5 18-3v22c-6-2-12-1.5-18 2Z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/><path d="M21 11v21M7 13c4-.4 7 0 10 1.7M25 14.7c3-1.7 6-2.1 10-1.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".6"/></svg></span>
+        <div><div class="brand-name">ATLAS <span>BÍBLICO</span></div><div class="brand-caption">A Bíblia vista como uma rede</div></div>
+      </div>
+      <nav class="sidebar-nav" aria-label="Navegação">
+        <a class="nav-option" href="atlas.html" style="text-decoration:none;background:#123b60;border:1px solid #315e83;color:#d5ecff"><span>◉</span> Atlas geográfico e histórico <span style="margin-left:auto">↗</span></a>
+        <button class="nav-option active" data-jump="geral"><span>◈</span> Visão geral</button>
+        <button class="nav-option" data-jump="diagrama"><span>◎</span> Versículo isolado</button>
+        <button class="nav-option" data-jump="lista"><span>☷</span> Referências vinculadas</button>
+        <button class="nav-option" id="navChain"><span>⌘</span> Exploração em cadeia</button>
+        <button class="nav-option" data-jump="pesquisa"><span>⌕</span> Buscar por palavra</button>
+        <button class="nav-option" data-jump="entidades"><span>♙</span> Pessoas e lugares</button>
+      </nav>
+      <section class="side-block">
+        <div class="side-label">EXPLORAR VERSÍCULO</div>
+        <label for="bookSelect">Livro</label>
+        <select id="bookSelect"></select>
+        <div class="side-grid">
+          <div><label for="chapterSelect">Capítulo</label><select id="chapterSelect"></select></div>
+          <div><label for="verseInput">Versículo</label><input id="verseInput" type="number" min="1" max="176" value="16" inputmode="numeric"></div>
+        </div>
+        <button class="btn btn-primary btn-block" id="btnVisualizar"><span>◎</span> Visualizar conexões</button>
+        <label class="label-search" for="searchInput">Ou digite a referência</label>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" autocomplete="off" placeholder="Ex.: Hebreus 2:3" aria-label="Pesquisar referência"></div>
+        <button class="btn btn-secondary btn-block" id="btnBuscar">Buscar versículo →</button>
+      </section>
+      <section class="side-block compact">
+        <div class="side-label">EXEMPLOS PARA EXPLORAR</div>
+        <div class="preset-list">
+          <button data-preset="John.3.16">João 3:16 <span>→</span></button>
+          <button data-preset="Rom.8.28">Romanos 8:28 <span>→</span></button>
+          <button data-preset="Gen.1.1">Gênesis 1:1 <span>→</span></button>
+        </div>
+      </section>
+      <section class="side-block compact side-dataset">
+        <div class="side-label">DADOS DO ATLAS</div>
+        <div class="data-status"><span class="status-dot" id="statusDot"></span><span id="dataStatus">Prévia inicial disponível</span></div>
+        <div class="progress-outer" id="progressOuter"><div class="progress-inner" id="progressInner"></div></div>
+        <button class="btn btn-outline btn-block" id="btnCarregar">Carregar base completa</button>
+        <label class="file-import" for="importFile">Ou importar arquivo TSV/TXT local <span>↗</span></label>
+        <input id="importFile" type="file" accept=".txt,.tsv,text/plain" hidden>
+        <div class="small-muted">Referências: OpenBible.info (CC BY 4.0). Texto: Almeida 1819 (Bíblia Livre).</div>
+      </section>
+      <div class="sidebar-bottom">ATLAS DE CONEXÕES BÍBLICAS<br><span>Versão 2.0 · Interface em português</span></div>
+    </aside>
+
+    <div class="body-column">
+      <header class="topbar">
+        <div class="topbar-main"><button id="menuToggle" class="icon-btn mobile-only" aria-label="Abrir menu">☰</button><div class="eyebrow">ESCRITURAS · VISUALIZAÇÃO INTERATIVA</div><div class="top-title">Conexões <span>Bíblicas</span></div></div>
+        <div class="topbar-right"><a href="atlas.html" class="btn btn-primary" style="text-decoration:none">◉ Atlas e linha do tempo</a><div class="live-pill"><span></span> MAPA INTERATIVO</div><button class="icon-btn" id="btnInfo" title="Como funciona">?</button></div>
+      </header>
+      <main class="main-content">
+        <section class="hero-panel panel" id="geral">
+          <div class="hero-header"><div><div class="section-kicker"><span class="kicker-mark"></span> PANORAMA INTERATIVO · FILTRO DE CONEXÕES</div><h1 id="heroHeading">Toda a Bíblia. <em>Uma rede de conexões.</em></h1><p id="heroExplainer">De Gênesis a Apocalipse: selecione qualquer arco para abrir os dois textos ligados. Use “Somente conexões selecionadas” para ocultar os demais.</p></div><div class="hero-actions"><button class="btn btn-ghost" id="btnFocusArcs" aria-pressed="false">◎ Somente conexões selecionadas</button><button class="btn btn-primary" id="btnExploreChain">⌘ Explorar em cadeia</button><button class="btn btn-ghost" id="btnDownload" title="Salvar o mapa geral em PNG">↓ PNG</button></div></div>
+          <div class="hero-stats"><div class="hero-stat"><strong id="statTotal">68</strong><span>conexões na base ativa</span></div><div class="stat-divider"></div><div class="hero-stat"><strong id="statDrawn">68</strong><span>arcos neste panorama</span></div><div class="stat-divider"></div><div class="hero-stat"><strong>66</strong><span>livros da Bíblia</span></div><div class="hero-verse"><span>VERSÍCULO EM FOCO</span><strong id="focusRefHero">João 3:16</strong></div></div>
+          <div class="canvas-area" id="canvasArea"><canvas id="atlasCanvas" aria-label="Mapa geral de referências bíblicas; mova o cursor sobre os arcos e clique para ver os versículos"></canvas><div class="atlas-tooltip" id="atlasTip" role="status"></div><div class="map-instruction"><span class="pulse-dot"></span> Clique em qualquer arco para revelar os versículos</div><div class="map-topcaption">ANTIGO TESTAMENTO <span></span> NOVO TESTAMENTO</div></div>
+          <div class="map-bottom"><div class="color-legend"><span><i style="--c:#f3ab65"></i> Pentateuco</span><span><i style="--c:#47c7ce"></i> Livros históricos</span><span><i style="--c:#b596ff"></i> Poéticos</span><span><i style="--c:#ec6da5"></i> Proféticos</span><span><i style="--c:#66dbaf"></i> Novo Testamento</span></div><span class="muted" id="mapCaption">Visão inicial · dados de exemplo documentados</span></div>
+        </section>
+
+        <section class="workspace" id="diagrama">
+          <article class="network-panel panel">
+            <div class="panel-header"><div><div class="section-kicker blue"><span class="kicker-mark"></span> EXPLORAÇÃO POR VERSÍCULO</div><h2>Diagrama de conexões <span id="networkFocusName">João 3:16</span></h2><p>Somente referências. Clique em um ponto ou linha para ver o texto em uma janela.</p></div><div class="network-actions"><button class="btn btn-primary btn-small" id="btnChainFromNetwork">⌘ Explorar cadeia</button><button class="btn btn-ghost btn-small" id="btnOpenCenter">Ler versículo central</button><button class="icon-btn" id="btnGraphOut" title="Salvar diagrama em SVG">↓</button></div></div>
+            <div class="network-filters"><div class="segmented" role="group" aria-label="Filtrar conexões"><button class="selected" data-testament="all">Todos</button><button data-testament="AT">Antigo Testamento</button><button data-testament="NT">Novo Testamento</button></div><div class="range-control"><label for="limitRange">Exibir <strong id="limitText">16</strong></label><input type="range" min="4" max="32" step="2" id="limitRange" value="16"></div></div>
+            <div class="network-surface"><div class="net-backdrop"></div><svg id="networkSvg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Diagrama interativo das relações do versículo selecionado"><defs><filter id="centralGlow"><feGaussianBlur stdDeviation="9" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="lineGlow"><feGaussianBlur stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g id="networkContent"></g></svg></div>
+            <div class="network-footer"><div><span class="status-dot blue-dot"></span> <span id="networkCounter">Carregando referências...</span></div><span>Duplo clique em uma referência para mudar o foco</span></div>
+          </article>
+          <aside class="details-panel panel" id="lista">
+            <div class="detail-header"><div class="section-kicker">VERSÍCULO SELECIONADO</div><div class="detail-main-title"><h2 id="focusRefSide">João 3:16</h2><button class="icon-btn" id="btnReadFocus" title="Ler versículo">↗</button></div><p>Explore as passagens relacionadas ao versículo.</p></div>
+            <div class="detail-stats"><div><strong id="relatedTotal">23</strong><span>conexões</span></div><div><strong id="relatedOld">1</strong><span>Antigo Testamento</span></div><div><strong id="relatedNew">22</strong><span>Novo Testamento</span></div></div>
+            <div class="list-heading"><h3>Referências conectadas</h3><span id="listedAmount">23 passagens</span></div>
+            <div class="related-list" id="relatedList"></div>
+            <div class="details-bottom">As referências são relações de estudo, não equivalem necessariamente a citações literais nem classificações doutrinárias.<br><a href="https://openbible.info/labs/cross-references/" target="_blank" rel="noopener">Consultar a fonte de dados ↗</a></div>
+          </aside>
+        </section>
+
+        <section class="research-panel panel" id="pesquisa">
+          <div class="section-kicker blue"><span class="kicker-mark"></span> 03 · CONCORDÂNCIA BÍBLICA</div>
+          <div class="research-heading"><div><h2>Pesquisa por palavras e expressões</h2><p>Encontre uma palavra nos versículos e descubra quais resultados possuem referências cruzadas na base ativa.</p></div><div class="data-pill" id="bibleSearchStatus">Prévia de 6 versículos</div></div>
+          <div class="research-controls"><div class="research-search"><span>⌕</span><input id="wordSearchInput" placeholder="Ex.: amor, fé, salvação, reino dos céus" autocomplete="off" aria-label="Palavra ou expressão bíblica"></div><button class="btn btn-primary" id="btnWordSearch">Pesquisar</button><button class="btn btn-ghost" id="btnLoadBible">Carregar Bíblia completa</button></div>
+          <div class="research-line"><label><input type="checkbox" id="wordOnlyConnected"> Somente versículos com conexões na base ativa</label><span id="wordSearchCounter">Digite uma palavra para iniciar.</span></div>
+          <div class="word-results" id="wordResults"><div class="research-empty">Exemplo: pesquise <button data-word-example="amor">amor</button>, <button data-word-example="Deus">Deus</button> ou <button data-word-example="Filho">Filho</button>. Clique em “Ver arcos” para exibir somente as conexões do versículo no mapa superior.</div></div>
+          <div class="research-bottom"><button class="btn btn-primary btn-small" id="btnSearchArcs" hidden>◈ Ver conexões ENTRE os resultados</button><button class="btn btn-ghost" id="wordMore" hidden>Mostrar mais 60 resultados</button><span>Texto Almeida 1819 (Bíblia Livre). A busca integral funciona offline depois da incorporação do texto bíblico à versão completa.</span></div>
+        </section>
+
+        <section class="entities-panel panel" id="entidades">
+          <div class="section-kicker blue"><span class="kicker-mark"></span> 04 · ENCICLOPÉDIA BÍBLICA</div>
+          <div class="research-heading"><div><h2>Personagens, cidades, lugares e acontecimentos</h2><p>Pesquise informações já armazenadas no programa, consulte os resumos e explore as passagens sem internet.</p></div><div class="data-pill" id="entityDataStatus">BASE LOCAL</div></div>
+          <div class="local-db-banner"><div><b><span class="local-db-indicator"></span> ACERVO INTERNO · ACESSO OFFLINE</b><p id="localDbCounts">Carregando banco interno...</p><small>As fichas e seus resumos estão incluídos neste programa. Sem requisições à internet para consultar.</small></div><div class="local-db-actions"><button class="btn btn-ghost btn-small" id="entityNew">+ Nova ficha</button><button class="btn btn-ghost btn-small" id="entityExport">↓ Exportar JSON</button><label class="btn btn-ghost btn-small local-file-label" for="entityImport">↑ Importar JSON</label><input id="entityImport" type="file" accept=".json,application/json" hidden></div></div>
+          <div class="research-tabs" role="group" aria-label="Tipo de pesquisa"><button class="selected" data-entity-mode="people">Personagens</button><button data-entity-mode="places">Cidades e locais</button><button data-entity-mode="events">Acontecimentos</button></div>
+          <div class="research-controls"><div class="research-search"><span>⌕</span><input id="entityQuery" placeholder="Ex.: Paulo, Moisés, Jerusalém, Belém" autocomplete="off" aria-label="Pesquisar pessoas lugares ou eventos"></div><button class="btn btn-primary" id="btnEntitySearch">Buscar</button><button class="btn btn-ghost" id="btnLoadEntities">Consultar catálogo on-line (opcional)</button></div>
+          <div class="entity-chips" id="entityExamples"><button data-entity-example="Jesus">Jesus</button><button data-entity-example="Paulo">Paulo</button><button data-entity-example="Daniel">Daniel</button><button data-entity-example="Pedro">Pedro</button></div>
+          <div class="entity-grid"><div class="entity-results" id="entityResults"></div><div class="entity-profile" id="entityProfile"><div class="research-empty">Selecione um personagem, cidade, lugar ou acontecimento para visualizar seu resumo e os versículos relacionados.</div></div></div>
+          <div class="entity-attribution">Fontes para ampliar o catálogo: <a href="https://bible.helloao.org/docs/pt/reference/datasets/" target="_blank" rel="noopener noreferrer">Free Use Bible API / Theographic</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Os resumos iniciais em português são editoriais e suas referências são exemplos, não listas exaustivas. Os dados externos podem estar em inglês.</div>
+        </section>
+        <footer class="footer">Referências cruzadas: <a href="https://openbible.info/labs/cross-references/" target="_blank" rel="noopener">OpenBible.info</a> · CC BY 4.0. Texto bíblico: <a href="https://github.com/midvash/bible-data" target="_blank" rel="noopener">Almeida 1819 — Bíblia Livre</a>. Pessoas e lugares: Theographic (CC BY-SA 4.0). O número de linhas desenhadas pode ser limitado para manter a navegação fluida.</footer>
+      </main>
+    </div>
+  </div>
+
+  <div id="modalLayer" class="modal-layer" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <section class="verse-modal" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+      <div class="modal-top"><div><div class="section-kicker">BÍBLIA · TEXTO DA PASSAGEM</div><h2 id="modalHeading">Versículo</h2></div><button class="modal-close" id="modalClose" aria-label="Fechar janela">×</button></div>
+      <div id="modalContents" class="modal-contents"></div>
+      <div class="modal-footer"><span>Tradução: Almeida 1819 (Bíblia Livre)</span><button class="btn btn-ghost btn-small" id="modalCloseBottom">Fechar</button></div>
+    </section>
+  </div>
+
+  <div class="chain-layer" id="chainLayer" aria-hidden="true">
+    <div class="chain-app" role="dialog" aria-modal="true" aria-labelledby="chainHeading">
+      <div class="chain-header"><div><div class="section-kicker blue">REDE EXPLORÁVEL · PASSO A PASSO</div><h2 id="chainHeading">Cadeia de conexões bíblicas</h2><p>Clique em um ponto para revelar os versículos ligados a ele. Clique novamente para carregar mais.</p></div><div class="chain-header-controls"><button class="btn btn-ghost" id="chainReset">↺ Reiniciar cadeia</button><button class="btn btn-primary" id="chainClose">Fechar ✕</button></div></div>
+      <div class="chain-layout">
+        <aside class="chain-sidebar"><div class="chain-sidebar-heading">VERSÍCULO DE ORIGEM</div><h3 id="chainRootRef">João 3:16</h3><p>A rede cresce ao longo das referências, sem conectar versículos que não possuem vínculo documentado.</p>
+        <div class="chain-metrics"><div><b id="chainNodeCount">1</b><span>Pontos</span></div><div><b id="chainEdgeCount">0</b><span>Linhas</span></div><div><b id="chainDepth">0</b><span>Níveis</span></div></div>
+        <div class="chain-sidebar-heading">CAMINHO ATUAL</div><div id="chainPath" class="chain-path"></div>
+        <div class="chain-sidebar-heading">PONTO SELECIONADO</div><div id="chainInspector" class="chain-inspector"></div>
+        <div class="chain-how">Cada ponto representa uma referência. As linhas representam conexões registradas na base ativa. Ao clicar em um ponto, o sistema mostra seus vínculos; ciclos e caminhos repetidos são mantidos sem duplicar os pontos.</div>
+        </aside>
+        <div class="chain-main"><div class="chain-tools"><span id="chainInfo">Clique no versículo inicial para expandir a cadeia</span><div><button id="chainZoomOut" title="Diminuir zoom">−</button><button id="chainZoomReset" title="Enquadrar">Ajustar</button><button id="chainZoomIn" title="Aumentar zoom">+</button></div></div><div class="chain-viewport" id="chainViewport"><svg id="chainSvg" viewBox="0 0 1200 670" aria-label="Grafo interativo de conexões bíblicas com pontos e linhas"><defs><filter id="chainGlow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g id="chainScene"></g></svg><div class="chain-hint">Arraste para navegar · Roda do mouse para zoom · Clique num ponto para expandir · Clique numa linha para ler os dois versículos.</div></div></div>
+      </div>
+    </div>
+  </div>
+  <div id="entityEditorLayer" class="entity-editor-layer" aria-hidden="true"><form id="entityEditorForm" class="entity-editor" role="dialog" aria-modal="true" aria-labelledby="entityEditorTitle"><header><div><small>ENCICLOPÉDIA BÍBLICA · BANCO INTERNO</small><h2 id="entityEditorTitle">Nova ficha</h2></div><button class="icon-btn" type="button" id="entityEditorClose" aria-label="Fechar">×</button></header><div class="entity-editor-form"><label>Categoria <select id="entityEditType"><option value="people">Personagem</option><option value="places">Cidade ou local</option><option value="events">Acontecimento</option></select></label><label>Nome <input id="entityEditName" required maxlength="180" placeholder="Ex.: Josias"></label><label>Outros nomes, separados por vírgulas <input id="entityEditAliases" placeholder="Ex.: apelido, outro nome"></label><label>Resumo <textarea id="entityEditSummary" rows="5" required placeholder="Informações verificáveis sobre o personagem ou local..."></textarea></label><label>Referências bíblicas (uma por linha) <textarea id="entityEditRefs" rows="5" placeholder="2 Reis 22:1&#10;2 Crônicas 34:3"></textarea></label></div><footer><small>Fichas editadas são salvas no navegador quando permitido. Use Exportar JSON como cópia de segurança.</small><button type="button" class="btn btn-ghost" id="entityEditorCancel">Cancelar</button><button type="submit" class="btn btn-primary">Salvar ficha</button></footer></form></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="dados/enciclopedia_total.js"></script>
+  <script>
+window.ATLAS_SITE_DATA_ONLY=true;
+window.ATLAS_AUTO_LOAD_REFS=true;
+window.ATLAS_AUTO_LOAD_BIBLE=true;
+window.ATLAS_REF_PARTS=["./dados/cross_references.txt"];
+</script>
+<script src="app.js"></script>
+  <script src="research.js"></script>
+</body>
+</html>
